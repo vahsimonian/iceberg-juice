@@ -21,7 +21,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="active"
-            to="about"
+            to="products"
             spy={true}
             smooth={true}
             offset={-50}
@@ -32,7 +32,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="active"
-            to="works"
+            to="order"
             spy={true}
             smooth={true}
             offset={-50}
@@ -43,7 +43,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="contact"
-            to="intro"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-50}
