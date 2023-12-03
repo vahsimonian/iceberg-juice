@@ -1,6 +1,6 @@
+import redDelight from "../src/assets/";
 
-
-const juiceData = [
+export const juiceData = [
   {
     id: 1,
     name: "Berry Apple Twist",
