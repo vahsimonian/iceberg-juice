@@ -1,4 +1,4 @@
-// import redDelight from "../src/assets/";
+//  import redDelight from "../src/assets/";
 
 export const juiceData = [
   {
