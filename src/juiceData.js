@@ -146,7 +146,7 @@ export const juiceData = [
     id: 11,
     name: "Watermelon Dragon Delight",
     color: "Pink",
-    title: "Dragon Watermelon Burst",
+    title: "Dragon Watermelon",
     fruits: ["Watermelon", "Dragonfruit"],
     description: "Exotic dragonfruit blended with sweet watermelon.",
     price: "$4.75",

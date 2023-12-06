@@ -7,10 +7,10 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: rgb(30, 30, 30);
-  background: linear-gradient(to bottom, #000, #000, rgb(30, 30, 30));
+  background: linear-gradient(to bottom, rgb(110, 85, 122), #571919);
   background-repeat: no-repeat;
   /* background: linear-gradient(
     to bottom,

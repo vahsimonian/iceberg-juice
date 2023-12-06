@@ -5,9 +5,12 @@ import { juiceData } from "../juiceData";
 function Home() {
   const juiceItem = juiceData.map((juice) => {
     return (
-      <div id="home">
-        <h2>{juice.name}</h2>
-        {/* <img src={juice.img} alt="" />; */}
+      <div className="home-item">
+        <h2>{juice.title}</h2>
+        <img src={juice.img} alt="juice" />
+        <p>{juice.price}</p>
+        <p>{juice.description}</p>
+        <p>{juice.price}</p>
       </div>
     );
   });
