@@ -1,10 +1,8 @@
 #home {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   margin-top: 40px;
-  height: 100%;
-  /* background-color: red; */
+  height: 100vh;
   max-width: 70vw;
   gap: 5px;
   margin-inline: 15vw;
@@ -13,27 +11,54 @@
 .home-item {
   width: 20vw;
   height: 45vh;
-  background-color: rgb(203, 111, 126);
-  background: linear-gradient(to bottom, rgb(110, 85, 122), #571919);
   font-size: 7.5px;
   margin: 2px;
   padding: 15px;
   border-radius: 7.5px;
-  /* border: 2.5px solid black; */
-  color: #fff;
-  background-image: url("../assets/juice-bg.png");
-  background-size: cover;
-  filter: brightness(50%);
+  color: #000;
+  /* background-image: url("../assets/juice-bg.png"); */
+  background-blend-mode: luminosity;
+  position: relative;
+  border: 1px solid #000;
+  z-index: 1;
+  background-color: white; /* Change to your desired color */
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0; /* Adjust to cover half the image */
+  width: 35%; /* This covers the remaining half */
+  height: 100%;
+  background-color: white; /* Change to your desired color */
+  border-radius: 5px 0 0 5px;
+  border: 2px solid white;
 }
 
 .home-item img {
-  border: 1px solid white;
-  border-radius: 7.5px;
+  z-index: 5;
+  position: absolute;
+  top: 25px;
+  border: 2px solid #fff;
   border-radius: 50%;
   margin-block: 12.5px;
-  width: 150px;
+  /* width: 250px; */
+  max-width: 15vw;
+  max-width: 60%;
+  transition: all 0.2s ease-in-out;
 }
 
-.home-item * {
-  margin-top: 2.5px;
+.home-item img:hover {
+  scale: 1.05;
+}
+
+.home-item h2 {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  background-color: white;
+  padding: 2.5px 7.5px;
+  border-radius: 15px;
 }

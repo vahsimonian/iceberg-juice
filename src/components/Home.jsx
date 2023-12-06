@@ -5,9 +5,13 @@ import { juiceData } from "../juiceData";
 function Home() {
   const juiceItem = juiceData.map((juice) => {
     return (
-      <div className="home-item">
-        <h2>{juice.title}</h2>
+      <div className="home-item" style={{ backgroundColor: "white" }}>
+        <h2 style={{ color: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" />
+        <div
+          className="color-overlay"
+          style={{ backgroundColor: juice.color }}
+        ></div>
         <p>{juice.price}</p>
         <p>{juice.fruits.join(" + ")}</p>
         <p>{juice.description}</p>
