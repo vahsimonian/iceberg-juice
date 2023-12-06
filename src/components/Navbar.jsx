@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <div className="letter0-v">
         <img src="" alt="" />
         <div className="nav-link-container">

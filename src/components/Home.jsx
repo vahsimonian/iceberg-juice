@@ -5,7 +5,7 @@ import { juiceData } from "../juiceData";
 function Home() {
   const juiceItem = juiceData.map((juice) => {
     return (
-      <div>
+      <div id="home">
         <h2>{juice.name}</h2>
         {/* <img src={juice.img} alt="" />; */}
       </div>

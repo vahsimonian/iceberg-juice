@@ -3,7 +3,7 @@ import "./search.css";
 
 function Search() {
   return (
-    <div>
+    <div id="search">
       <form action="">
         <input type="text" />
       </form>
