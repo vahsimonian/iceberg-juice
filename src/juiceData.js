@@ -28,7 +28,7 @@ import tropicalSmooth from "../src/assets/Tropical Smooth.png";
 import tropicalSmoothie from "../src/assets/Tropical Smoothie.png";
 import tropicalSunrise from "../src/assets/Tropical Sunrise.png";
 import zestyLemonade from "../src/assets/Zesty Lemonade.png";
-import all from "../src/assets/all.png";
+// import all from "../src/assets/all.png";
 
 export const juiceData = [
   {
