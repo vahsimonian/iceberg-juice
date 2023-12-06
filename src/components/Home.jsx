@@ -9,8 +9,8 @@ function Home() {
         <h2>{juice.title}</h2>
         <img src={juice.img} alt="juice" />
         <p>{juice.price}</p>
+        <p>{juice.fruits.join(" + ")}</p>
         <p>{juice.description}</p>
-        <p>{juice.price}</p>
       </div>
     );
   });

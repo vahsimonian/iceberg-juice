@@ -15,18 +15,25 @@
   height: 45vh;
   background-color: rgb(203, 111, 126);
   background: linear-gradient(to bottom, rgb(110, 85, 122), #571919);
-  color: black;
-  font-size: 10px;
+  font-size: 7.5px;
   margin: 2px;
   padding: 15px;
   border-radius: 7.5px;
   /* border: 2.5px solid black; */
   color: #fff;
+  background-image: url("../assets/juice-bg.png");
+  background-size: cover;
+  filter: brightness(50%);
 }
 
 .home-item img {
   border: 1px solid white;
   border-radius: 7.5px;
-  margin-top: 5px;
+  border-radius: 50%;
+  margin-block: 12.5px;
   width: 150px;
+}
+
+.home-item * {
+  margin-top: 2.5px;
 }
