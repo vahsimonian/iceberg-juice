@@ -1,5 +1,5 @@
 import React from "react";
-import "./fruits.css";
+import "./juices.css";
 import { juiceData } from "../juiceData";
 
 function Juices() {
