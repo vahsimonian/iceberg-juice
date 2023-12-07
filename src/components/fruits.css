@@ -33,7 +33,9 @@
   padding: 15px;
   border-radius: 7.5px;
   color: #000;
-  background-image: url("../assets/juice-bg.png");
+  background-image: url("../assets/home-item.png");
+  background-size: cover;
+  background-position: 15px;
   background-blend-mode: luminosity;
   position: relative;
   border: 2px solid #fff;
