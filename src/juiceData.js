@@ -122,7 +122,7 @@ export const juiceData = [
   {
     id: 9,
     name: "Ginger Lemon Twist",
-    color: "Yellow",
+    color: "lightyellow",
     title: "Zesty Lemonade",
     fruits: ["Lemon", "Ginger"],
     description: "A zingy lemon and ginger blend.",
@@ -133,7 +133,7 @@ export const juiceData = [
   {
     id: 10,
     name: "Pomegranate Cherry Fusion",
-    color: "Red",
+    color: "crimson",
     title: "Ruby Red",
     fruits: ["Cherry", "Pomegranate"],
     description: "A rich blend of cherry and pomegranate.",
@@ -145,7 +145,7 @@ export const juiceData = [
   {
     id: 11,
     name: "Watermelon Dragon Delight",
-    color: "Pink",
+    color: "palevioletred",
     title: "Dragon Watermelon",
     fruits: ["Watermelon", "Dragonfruit"],
     description: "Exotic dragonfruit blended with sweet watermelon.",
@@ -167,7 +167,7 @@ export const juiceData = [
   {
     id: 13,
     name: "Beet Berry Blend",
-    color: "Red",
+    color: "crimson",
     title: "Raspberry Beet Fusion",
     fruits: ["Raspberry", "Beet"],
     description: "A mix of tart raspberry and earthy beet.",
@@ -178,7 +178,7 @@ export const juiceData = [
   {
     id: 14,
     name: "Banana Pineapple Smoothie",
-    color: "Yellow",
+    color: "khaki",
     title: "Tropical Yellow",
     fruits: ["Banana", "Pineapple"],
     description: "Sweet blend of banana and pineapple for a tropical taste.",
@@ -189,7 +189,7 @@ export const juiceData = [
   {
     id: 15,
     name: "Currant Blue Fusion",
-    color: "Purple",
+    color: "darkmagenta",
     title: "Berry Purple",
     fruits: ["Blackcurrant", "Blueberry"],
     description: "Rich and deep flavors of blackcurrant and blueberry.",
@@ -200,7 +200,7 @@ export const juiceData = [
   {
     id: 16,
     name: "Pumpkin Carrot Delight",
-    color: "Orange",
+    color: "orangered",
     title: "Autumn Harvest",
     fruits: ["Pumpkin", "Carrot"],
     description: "A hearty blend of pumpkin and carrot, perfect for fall.",
@@ -211,7 +211,7 @@ export const juiceData = [
   {
     id: 17,
     name: "Kale Apple Cleanse",
-    color: "Green",
+    color: "darkgreen",
     title: "Green Detox",
     fruits: ["Kale", "Green Apple"],
     description: "Healthy kale mixed with sweet green apple.",
@@ -278,7 +278,7 @@ export const juiceData = [
   {
     id: 23,
     name: "Apple Pear Medley",
-    color: "Yellow-Green",
+    color: "greenyellow",
     title: "Orchard Fresh",
     fruits: ["Green Apple", "Pear"],
     description: "Crisp and refreshing blend of green apple and pear.",
@@ -289,7 +289,7 @@ export const juiceData = [
   {
     id: 24,
     name: "Cranberry Apple Fusion",
-    color: "Red",
+    color: "tomato",
     title: "Cran-Apple Splash",
     fruits: ["Cranberry", "Apple"],
     description: "Tart cranberry meets sweet apple in this vibrant blend.",
@@ -300,7 +300,7 @@ export const juiceData = [
   {
     id: 25,
     name: "Currant Berry Delight",
-    color: "Purple",
+    color: "blueviolet",
     title: "Berry Deep",
     fruits: ["Blackcurrant", "Blueberry"],
     description: "A deep, rich blend of blackcurrant and blueberry.",
@@ -333,7 +333,7 @@ export const juiceData = [
   {
     id: 28,
     name: "Minted Cucumber Splash",
-    color: "Green",
+    color: "lightgreen",
     title: "Cooling Breeze",
     fruits: ["Cucumber", "Mint"],
     description: "A refreshing and cooling blend of cucumber and mint.",
@@ -344,7 +344,7 @@ export const juiceData = [
   {
     id: 29,
     name: "Grapefruit Orange Zest",
-    color: "Red-Orange",
+    color: "lightcoral",
     title: "Citrus Surge",
     fruits: ["Blood Orange", "Grapefruit"],
     description: "A tangy and invigorating mix of blood orange and grapefruit.",
