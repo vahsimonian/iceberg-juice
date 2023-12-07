@@ -33,12 +33,11 @@
   padding: 15px;
   border-radius: 7.5px;
   color: #000;
-  /* background-image: url("../assets/juice-bg.png"); */
+  background-image: url("../assets/juice-bg.png");
   background-blend-mode: luminosity;
   position: relative;
-  border: 1px solid #000;
+  border: 2px solid #fff;
   z-index: 1;
-  background-color: white; /* Change to your desired color */
 }
 
 .color-overlay {
@@ -47,9 +46,10 @@
   left: 0; /* Adjust to cover half the image */
   width: 35%; /* This covers the remaining half */
   height: 100%;
-  background-color: white; /* Change to your desired color */
+  background-color: white;
   border-radius: 5px 0 0 5px;
-  border: 2px solid white;
+  border-right: 2px solid white;
+  z-index: 1;
 }
 
 .home-item img {
@@ -72,9 +72,22 @@
 .home-item h2 {
   position: absolute;
   right: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: white;
   padding: 2.5px 7.5px;
   border-radius: 15px;
-  z-index: 1;
+  z-index: 3;
 }
+
+.home-item p {
+  position: inherit;
+  z-index: 2;
+  top: 15px;
+}
+
+/* .button {
+  cursor: pointer;
+}
+.button:hover {
+  background-color: chartreuse;
+} */
