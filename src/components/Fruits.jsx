@@ -1,8 +1,8 @@
 import React from "react";
-import "./home.css";
+import "./fruits.css";
 import { juiceData } from "../juiceData";
 
-function Home() {
+function Fruits() {
   const juiceItem = juiceData.map((juice) => {
     return (
       <div className="home-item" style={{ backgroundColor: "white" }}>
@@ -24,4 +24,4 @@ function Home() {
   return <div id="home">{juiceItem}</div>;
 }
 
-export default Home;
+export default Fruits;
