@@ -122,7 +122,7 @@ export const juiceData = [
   {
     id: 9,
     name: "Ginger Lemon Twist",
-    color: "lightyellow",
+    color: "peachpuff",
     title: "Zesty Lemonade",
     fruits: ["Lemon", "Ginger"],
     description: "A zingy lemon and ginger blend.",
@@ -233,7 +233,7 @@ export const juiceData = [
   {
     id: 19,
     name: "Lemon Pear Fusion",
-    color: "Yellow",
+    color: "peachpuff",
     title: "Pear Lemon Delicacy",
     fruits: ["Lemon", "Pear"],
     description: "A subtle mix of pear with a hint of lemon.",
