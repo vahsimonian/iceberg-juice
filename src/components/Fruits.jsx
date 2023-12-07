@@ -2,11 +2,11 @@ import React from "react";
 import "./fruits.css";
 import { juiceData } from "../juiceData";
 
-function Fruits() {
+function Juices() {
   const juiceItem = juiceData.map((juice) => {
     return (
-      <div className="home-item" style={{ backgroundColor: "white" }}>
-        <h2 style={{ color: juice.color }}>{juice.title}</h2>
+      <div className="juice-item" style={{ backgroundColor: "white" }}>
+        <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" />
         {/* <button className="button"> */}
         <div
@@ -24,4 +24,4 @@ function Fruits() {
   return <div id="home">{juiceItem}</div>;
 }
 
-export default Fruits;
+export default Juices;

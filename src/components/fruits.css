@@ -25,7 +25,7 @@
   background: rgba(255, 255, 255, 0.658);
 }
 
-.home-item {
+.juice-item {
   width: 200px;
   height: 250px;
   font-size: 7.5px;
@@ -54,7 +54,7 @@
   z-index: 1;
 }
 
-.home-item img {
+.juice-item img {
   z-index: 5;
   position: absolute;
   top: 25px;
@@ -67,21 +67,22 @@
   transition: all 0.2s ease-in-out;
 }
 
-.home-item img:hover {
+.juice-item img:hover {
   scale: 1.05;
 }
 
-.home-item h2 {
+.juice-item h2 {
   position: absolute;
-  right: 5px;
-  /* border: 1px solid black; */
-  background-color: white;
+  top: 10px;
+  right: 0;
   padding: 2.5px 7.5px;
-  border-radius: 15px;
+  border-radius: 15px 0 0 10px;
   z-index: 3;
+  color: white;
+  overflow: hidden;
 }
 
-.home-item p {
+.juice-item p {
   position: inherit;
   z-index: 2;
   top: 15px;
