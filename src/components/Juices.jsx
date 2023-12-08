@@ -14,9 +14,11 @@ function Juices() {
           style={{ backgroundColor: juice.color }}
         ></div>
         {/* </button> */}
-        <p>{juice.price}</p>
-        <p>{juice.fruits.join(" + ")}</p>
-        <p>{juice.description}</p>
+        <div className="juice-p">
+          <p>{juice.price}</p>
+          <p>{juice.fruits.join(" + ")}</p>
+          <p>{juice.description}</p>
+        </div>
       </div>
     );
   });
