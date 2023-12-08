@@ -1,4 +1,4 @@
-#home {
+#juices {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -34,7 +34,7 @@
   padding: 15px;
   border-radius: 7.5px;
   color: #000;
-  background-image: url("../assets/home-item.png");
+  background-image: url("../assets/bg-s/home-item.png");
   background-size: cover;
   background-position: 15px;
   background-blend-mode: luminosity;

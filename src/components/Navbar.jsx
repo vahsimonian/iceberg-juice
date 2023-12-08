@@ -1,13 +1,15 @@
 import React from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
+import searchIcon from "../assets/icons/search-2-line.png";
 
 function Navbar() {
   return (
     <nav id="navbar">
-      <div>v</div>
-      <form action="">
-        <input type="text" />
+      <div>Home</div>
+      <form action="" className="search-container">
+        <input type="text" className="search-input" />
+        <img src={searchIcon} className="search" alt="" />
       </form>
       <div className="nav-link-container">
         <Link
@@ -25,7 +27,7 @@ function Navbar() {
         <Link
           className="navbar-link-item"
           activeClass="active"
-          to="products"
+          to="about"
           spy={true}
           smooth={true}
           offset={-50}
@@ -37,14 +39,14 @@ function Navbar() {
         <Link
           className="navbar-link-item"
           activeClass="active"
-          to="order"
+          to="juices"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
           classID="nav-link-item"
         >
-          Production
+          Products
         </Link>
         <Link
           className="navbar-link-item"

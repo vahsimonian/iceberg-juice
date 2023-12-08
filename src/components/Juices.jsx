@@ -23,7 +23,7 @@ function Juices() {
     );
   });
 
-  return <div id="home">{juiceItem}</div>;
+  return <div id="juices">{juiceItem}</div>;
 }
 
 export default Juices;
