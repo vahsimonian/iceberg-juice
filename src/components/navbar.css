@@ -1,11 +1,16 @@
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #808080;
+  padding: 20px;
+}
+
 .nav-link-container {
   display: flex;
-  justify-content: space-between;
-  background-color: #808080;
-  /* padding: 25px; */
+  justify-content: space-evenly;
 }
 
 .navbar-link-item {
-  padding: 25px 50px;
-  margin-inline: 25px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
 }

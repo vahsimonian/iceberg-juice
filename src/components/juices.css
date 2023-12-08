@@ -7,6 +7,7 @@
   max-width: 70vw;
   gap: 5px;
   margin-inline: 15vw;
+  gap: 5px;
 }
 
 /* Style the scrollbar itself (width, background) */
@@ -65,12 +66,12 @@
   max-width: 60%;
   transition: all 0.35s ease-in-out;
   left: 10px;
+  /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .juice-item img:hover {
   scale: 1.3;
   /* border: none; */
-  border-radius: 0 95% 0 100%;
 }
 
 .juice-item h2 {
@@ -93,6 +94,7 @@
 }
 
 .juice-p p {
+  margin-top: 5px;
   font-family: "Ubuntu", sans-serif;
 }
 

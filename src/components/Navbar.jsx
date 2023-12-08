@@ -5,6 +5,10 @@ import { Link } from "react-scroll";
 function Navbar() {
   return (
     <nav id="navbar">
+      <div>v</div>
+      <form action="">
+        <input type="text" />
+      </form>
       <div className="nav-link-container">
         <Link
           className="navbar-link-item"
@@ -28,7 +32,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          About me
+          About iK
         </Link>
         <Link
           className="navbar-link-item"
@@ -40,7 +44,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          My works
+          Production
         </Link>
         <Link
           className="navbar-link-item"

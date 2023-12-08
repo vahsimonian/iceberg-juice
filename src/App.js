@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Juices />
+      {/* <Juices /> */}
       <Search />
       <Contact />
       <Footer />
