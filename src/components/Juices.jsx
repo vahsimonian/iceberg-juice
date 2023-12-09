@@ -13,6 +13,7 @@ function Juices() {
         [juice.id]: !prevState[juice.id],
       }));
     };
+
     return (
       <div className="juice-item" style={{ backgroundColor: "white" }}>
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
