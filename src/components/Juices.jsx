@@ -19,7 +19,7 @@ function Juices() {
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
-          <div onClick={toggleFilledInShop}>
+          <div onClick={toggleFilledInShop} className="shopping-cart-icon">
             {filledInShop[juice.id] ? (
               <RiShoppingCartFill />
             ) : (
