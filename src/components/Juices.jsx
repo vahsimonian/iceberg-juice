@@ -7,6 +7,9 @@ function Juices() {
   const [filledInShop, setFilledInShop] = useState({});
 
   const juiceItem = juiceData.map((juice) => {
+    const isFilled = filledInShop[juice.id];
+    const iconClass = `shopping-cart-icon ${isFilled ? "filled" : ""}`;
+
     const toggleFilledInShop = () => {
       setFilledInShop((prevState) => ({
         ...prevState,
@@ -19,7 +22,7 @@ function Juices() {
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
-          <div onClick={toggleFilledInShop} className="shopping-cart-icon">
+          <div onClick={toggleFilledInShop} className={iconClass}>
             {filledInShop[juice.id] ? (
               <RiShoppingCartFill />
             ) : (
