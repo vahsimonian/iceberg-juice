@@ -23,8 +23,8 @@ function Juices() {
         <img src={juice.img} alt="juice" />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
           <div onClick={toggleFilledInShop} className={iconClass}>
-            {filledInShop[juice.id] ? (
-              <RiShoppingCartFill />
+            {isFilled ? (
+              <RiShoppingCartFill style={{ color: juice.color }} />
             ) : (
               <RiShoppingCartLine />
             )}
