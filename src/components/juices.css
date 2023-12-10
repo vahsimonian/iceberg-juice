@@ -52,23 +52,42 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
-  margin-top: 220px;
-  margin-left: 170px;
+  margin-top: 221px;
+  margin-left: 173px;
   font-size: 20px;
 }
 
-.juice-item:hover .shopping-cart-icon {
-  opacity: 1;
-  bottom: 0;
-  right: 0;
+.favorite-icon {
+  /* position: absolute;
+  transition: all 0.5s ease-in-out;
+  opacity: 0; */
+  transition: all 0.5s ease-in-out;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: inherit;
+  margin-top: 189px;
+  margin-left: 162.2px;
+  font-size: 20px;
+}
+
+.info-icon {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .juice-item:hover .shopping-cart-icon,
-.shopping-cart-icon.filled {
-  /* Make it visible and adjust position as needed */
+.shopping-cart-icon.filled,
+.favorite-icon.filled,
+.juice-item:hover .favorite-icon,
+.info-icon {
   opacity: 1;
-  bottom: 10px;
-  right: 10px;
 }
 
 .color-overlay {
