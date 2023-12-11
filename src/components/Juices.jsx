@@ -45,16 +45,16 @@ function Juices() {
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
           <div onClick={toggleFilledInShop} className={iconClass}>
             {isFilled ? (
-              <RiShoppingCartFill style={{ color: "white" }} />
+              <RiShoppingCartFill style={{ color: "black" }} />
             ) : (
-              <RiShoppingCartLine style={{ color: "white" }} />
+              <RiShoppingCartLine style={{ color: "black" }} />
             )}
           </div>
           <div onClick={toggleFavorite} className={favoriteIconClass}>
             {isFavorite ? (
-              <AiFillHeart style={{ color: "white" }} />
+              <AiFillHeart style={{ color: "red" }} />
             ) : (
-              <AiOutlineHeart style={{ color: "white" }} />
+              <AiOutlineHeart style={{ color: "red" }} />
             )}
           </div>
           {hovered && (
@@ -63,8 +63,11 @@ function Juices() {
             </div>
           )}
           <div className="juice-p">
+            <hr className="hr-price" />
             <p>{juice.price}</p>
+            <hr className="hr-fruits" />
             <p>{juice.fruits.join(" + ")}</p>
+            <hr className="hr-desc" />
             <p>{juice.description}</p>
           </div>
         </div>

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
-  font-family: "Shadows Into Light", cursive;
 }
 body {
   height: 100%;
@@ -13,6 +12,5 @@ body {
   color: white;
   overflow: hidden;
   overflow-y: scroll;
-  font-family: "Iceland", sans-serif;
   font-weight: bold;
 }

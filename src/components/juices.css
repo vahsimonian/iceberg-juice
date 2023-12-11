@@ -52,8 +52,8 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
-  margin-top: 225px;
-  margin-left: 178px;
+  margin-top: 227px;
+  margin-left: 179px;
   font-size: 15px;
 }
 
@@ -67,14 +67,14 @@
   opacity: 0;
   cursor: pointer;
   position: inherit;
-  margin-top: 225px;
-  margin-left: 164px;
+  margin-top: 227px;
+  margin-left: 161px;
   font-size: 15px;
 }
 
 .info-icon {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 4px;
   font-size: 15px;
   color: white;
@@ -130,17 +130,34 @@
   z-index: 3;
   color: white;
   overflow: hidden;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .juice-p {
-  position: absolute;
+  position: inherit;
   z-index: 2;
-  bottom: 2px;
-  left: 2px;
+  bottom: 0;
+  left: 0;
   border-radius: 0 100% 0 0;
 }
 
 .juice-p p {
-  margin-top: 5px;
-  font-family: "Ubuntu", sans-serif;
+  margin-top: 0;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 2px 5px;
+  font-size: 6px;
+  color: white;
+}
+
+.hr-price {
+  width: 20px;
+  border: 1px solid #fff;
+}
+.hr-fruits {
+  width: 40px;
+  border: 1px solid #fff;
+}
+.hr-desc {
+  width: 60px;
+  border: 1px solid #fff;
 }
