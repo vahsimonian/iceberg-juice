@@ -52,9 +52,9 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
-  margin-top: 221px;
-  margin-left: 173px;
-  font-size: 20px;
+  margin-top: 225px;
+  margin-left: 178px;
+  font-size: 15px;
 }
 
 .favorite-icon {
@@ -62,14 +62,14 @@
   transition: all 0.5s ease-in-out;
   opacity: 0; */
   transition: all 0.5s ease-in-out;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   opacity: 0;
   cursor: pointer;
   position: inherit;
-  margin-top: 189px;
-  margin-left: 162.2px;
-  font-size: 20px;
+  margin-top: 225px;
+  margin-left: 164px;
+  font-size: 15px;
 }
 
 .info-icon {
