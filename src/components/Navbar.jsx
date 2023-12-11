@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 import searchIcon from "../assets/icons/search-2-line.png";
 
 function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const searchIconHover = () => {};
+
   return (
     <nav id="navbar">
       <div>Home</div>
       <form action="" className="search-container">
         <input type="text" className="search-input" />
-        <img src={searchIcon} className="search" alt="" />
+        <img
+          src={searchIcon}
+          className="search"
+          alt="search"
+          onMouseEnter={setIsHovered(true)}
+          onMouseLeave={setIsHovered(false)}
+        />
       </form>
       <div className="nav-link-container">
         <Link

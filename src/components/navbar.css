@@ -29,20 +29,26 @@
   /* background-color: white; */
   border-radius: 0 50% 50% 0;
 }
+.search:hover .search-input {
+  display: block;
+  opacity: 1;
+}
 
 .search-input {
+  /* position: absolute; */
   /* display: none; */
-  padding: 6px 0;
+  /* opacity: 0; */
+  padding: 17.5px 0;
   border: none;
   border-radius: 15px 0 0 15px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .search-container {
   display: flex;
+  justify-content: center;
   height: 25px;
-  width: 150px;
   align-items: center;
-  position: absolute;
-  bottom: 3%;
-  right: 3%;
+  position: fixed;
+  bottom: 25px;
+  right: 75px;
 }
