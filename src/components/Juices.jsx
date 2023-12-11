@@ -17,13 +17,6 @@ function Juices() {
     const isFavorite = favorites[juice.id];
     const favoriteIconClass = `favorite-icon ${isFavorite ? "filled" : ""}`;
 
-    const infoIcon = () => {
-      setHovered((prevState) => ({
-        ...prevState,
-        [juice.id]: !prevState[juice.id],
-      }));
-    };
-
     const toggleFavorite = () => {
       setFavorites((prevState) => ({
         ...prevState,
@@ -38,10 +31,18 @@ function Juices() {
       }));
     };
 
+    const handleSearch = (event) => {
+      event.preventDefault(); // Prevent default form submission
+      window.open(
+        `https://www.google.com/search?q=${juice.fruits} juice`,
+        "_blank"
+      );
+    };
+
     return (
       <div className="juice-item" style={{ backgroundColor: "white" }}>
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
-        <img src={juice.img} alt="juice" />
+        <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
           <div onClick={toggleFilledInShop} className={iconClass}>
             {isFilled ? (
@@ -58,7 +59,7 @@ function Juices() {
             )}
           </div>
           {hovered && (
-            <div className="info-icon" onClick={infoIcon}>
+            <div className="info-icon" onClick={handleSearch}>
               <IoInformationCircleOutline />
             </div>
           )}
