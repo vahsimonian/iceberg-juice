@@ -6,19 +6,19 @@ import searchIcon from "../assets/icons/search-2-line.png";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const searchIconHover = () => {};
+  const searchIconHover = () => (isHovered ? "search-block" : "search-none");
 
   return (
     <nav id="navbar">
       <div>Home</div>
       <form action="" className="search-container">
-        <input type="text" className="search-input" />
+        <input type="text" className={`search-input ${searchIconHover()}`} />
         <img
           src={searchIcon}
           className="search"
           alt="search"
-          onMouseEnter={setIsHovered(true)}
-          onMouseLeave={setIsHovered(false)}
+          onMouseLeave={() => setIsHovered(true)}
+          onMouseEnter={() => setIsHovered(false)}
         />
       </form>
       <div className="nav-link-container">
