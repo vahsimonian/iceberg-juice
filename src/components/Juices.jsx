@@ -32,7 +32,7 @@ function Juices() {
     };
 
     const handleSearch = (event) => {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault();
       window.open(
         `https://www.google.com/search?q=${juice.fruits} juice`,
         "_blank"
@@ -40,7 +40,11 @@ function Juices() {
     };
 
     return (
-      <div className="juice-item" style={{ backgroundColor: "white" }}>
+      <div
+        className="juice-item"
+        style={{ backgroundColor: "white" }}
+        key={juice.id}
+      >
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
