@@ -7,6 +7,16 @@ import whiteArrowDown from "../assets/icons/white-down-arrow.png";
 
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleInputFocus = () => {
+    setIsHovered(false);
+    setIsFocused(true);
+  };
+
+  const handleInputBlur = () => {
+    setIsFocused(false);
+  };
 
   return (
     <nav id="navbar">
@@ -14,13 +24,18 @@ function Navbar() {
       <form action="" className="search-container">
         <input
           type="text"
-          className={`search-input ${isHovered ? "" : "search-input"}`}
+          className={`search-input ${
+            isHovered || isFocused ? "" : "search-none"
+          }`}
+          onFocus={handleInputFocus}
+          onBlur={handleInputBlur}
         />
         <img
           src={searchIcon}
-          className="search"
+          className={`search ${isFocused ? "search-focused" : ""}`}
           alt="search"
           onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         />
       </form>
       <div className="nav-link-container">

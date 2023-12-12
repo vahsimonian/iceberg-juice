@@ -1,12 +1,11 @@
 #navbar {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   width: 100%;
-  padding-inline-start: 100px;
   background-color: #808080;
   align-items: center;
   font-family: "Space Grotesk", sans-serif;
-  gap: 50px;
+  gap: 35px;
   position: fixed;
 }
 
@@ -60,16 +59,29 @@
   right: 35px;
 }
 
+.search-focused {
+  border-radius: 0 50% 50% 0;
+}
+
 a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .search-input {
   display: none;
 }
 
-/* When isHovered is true, the input field will be displayed */
-.search-container:hover .search-input {
+.search-none {
+  display: none;
+}
+
+.search-container:hover .search-input,
+.search-input:focus {
   display: block;
+}
+
+.search-focused {
+  border-radius: 0 50% 50% 0;
 }
