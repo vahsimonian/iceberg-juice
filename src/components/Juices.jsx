@@ -54,7 +54,6 @@ function Juices() {
             ) : (
               <RiShoppingCartLine style={{ color: "black" }} />
             )}
-            s
           </div>
           <div onClick={toggleFavorite} className={favoriteIconClass}>
             {isFavorite ? (

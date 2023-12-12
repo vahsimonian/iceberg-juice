@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 import searchIcon from "../assets/icons/search-2-line.png";
+import juiceIcon from "../assets/icons/juice-icon.png";
+import arrowDown from "../assets/icons/down-arrow.png";
+import whiteArrowDown from "../assets/icons/white-down-arrow.png";
 
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -10,7 +13,7 @@ function Navbar() {
 
   return (
     <nav id="navbar">
-      <div>Home</div>
+      <img src={juiceIcon} alt="juice" width={70} className="juice-icon" />
       <form action="" className="search-container">
         <input type="text" className={`search-input ${searchIconHover()}`} />
         <img
@@ -32,7 +35,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          Home
+          Home <img src={whiteArrowDown} alt="arrow-down" width={15} />
         </Link>
         <Link
           className="navbar-link-item"
@@ -44,7 +47,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          About iK
+          About iK <img src={whiteArrowDown} alt="arrow-down" width={15} />
         </Link>
         <Link
           className="navbar-link-item"
@@ -56,7 +59,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          Products
+          Products <img src={whiteArrowDown} alt="arrow-down" width={15} />
         </Link>
         <Link
           className="navbar-link-item"
@@ -68,7 +71,7 @@ function Navbar() {
           duration={500}
           classID="nav-link-item"
         >
-          Contact
+          Contact <img src={whiteArrowDown} alt="arrow-down" width={15} />
         </Link>
       </div>
     </nav>
