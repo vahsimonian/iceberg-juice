@@ -9,19 +9,21 @@ import whiteArrowDown from "../assets/icons/white-down-arrow.png";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const searchIconHover = () => (isHovered ? "search-block" : "search-none");
+  const searchIconHover = () => (isHovered ? "" : "search-none");
 
   return (
     <nav id="navbar">
       <img src={juiceIcon} alt="juice" width={70} className="juice-icon" />
       <form action="" className="search-container">
-        <input type="text" className={`search-input ${searchIconHover()}`} />
+        <input
+          type="text"
+          className={`search-input ${isHovered ? "" : "search-input"}`}
+        />
         <img
           src={searchIcon}
           className="search"
           alt="search"
-          onMouseLeave={() => setIsHovered(true)}
-          onMouseEnter={() => setIsHovered(false)}
+          onMouseEnter={() => setIsHovered(true)}
         />
       </form>
       <div className="nav-link-container">

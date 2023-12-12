@@ -40,12 +40,8 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.search:hover {
+.search-container:hover .search {
   border-radius: 0 50% 50% 0;
-}
-.search:hover .search-input {
-  display: block;
-  opacity: 1;
 }
 
 .search-input {
@@ -60,16 +56,20 @@
   height: 25px;
   align-items: center;
   position: fixed;
-  bottom: 25px;
-  right: 75px;
-}
-
-.search-block {
-  display: none;
+  bottom: 35px;
+  right: 35px;
 }
 
 a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.search-input {
+  display: none;
+}
+
+/* When isHovered is true, the input field will be displayed */
+.search-container:hover .search-input {
+  display: block;
 }
