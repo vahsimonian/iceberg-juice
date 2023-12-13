@@ -35,22 +35,24 @@ export const navbarItems = [
     id: 1,
     name: "Home",
     to: "home",
-    listItems: ["home"],
   },
   {
     id: 2,
     name: "About",
     to: "about",
+    listItems: ["Business", "Hitory", "Mission", "Team"],
   },
   {
     id: 3,
     name: "Products",
     to: "products",
+    listItems: ["Catalogue", "Services", "Products", "We Are Worldwide"],
   },
   {
     id: 4,
     name: "Contact",
     to: "contact",
+    listItems: ["Social Media", "Contact us"],
   },
 ];
 

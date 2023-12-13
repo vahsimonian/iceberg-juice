@@ -55,7 +55,9 @@ function Navbar() {
       <div className="nav-link-container">
         {navbarItems.map((item, index) => (
           <Link
-            className="navbar-link-item navbar-link-item-container"
+            className={`navbar-link-item navbar-link-item-container ${
+              index === 0 || index === 3 ? "home-link" : ""
+            }`}
             activeClass="active"
             to={item.to}
             spy={true}
@@ -67,7 +69,10 @@ function Navbar() {
             onMouseLeave={() => setHoveredItem(null)}
             key={item.id}
           >
-            {item.name} <img src={whiteArrowDown} alt="arrow-down" width={13} />
+            {item.name}
+            {item.name !== "Home" && item.name !== "Contact" && (
+              <img src={whiteArrowDown} alt="arrow-down" width={13} />
+            )}
             {hoveredItem === index && <div className="hover-div"></div>}
           </Link>
           // </div>
