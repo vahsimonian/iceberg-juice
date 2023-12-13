@@ -46,7 +46,7 @@ export const navbarItems = [
     id: 3,
     name: "Products",
     to: "products",
-    listItems: ["Catalogue", "Services", "Products", "We Are Worldwide"],
+    listItems: ["Catalogue", "Services", "Products", "We Worldwide"],
   },
   {
     id: 4,

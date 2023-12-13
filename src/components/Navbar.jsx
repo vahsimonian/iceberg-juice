@@ -13,12 +13,10 @@ import {
 } from "react-icons/bs";
 
 function Navbar() {
-  const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleInputFocus = () => {
-    setIsHovered(false);
     setIsFocused(true);
   };
 
@@ -38,9 +36,8 @@ function Navbar() {
       <form action="" className="search-container">
         <input
           type="text"
-          className={`search-input ${
-            isHovered || isFocused ? "" : "search-none"
-          }`}
+          className={`search-input
+          `}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
         />
@@ -48,8 +45,6 @@ function Navbar() {
           src={searchIcon}
           className={`search ${isFocused ? "search-focused" : ""}`}
           alt="search"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         />
       </form>
       <div className="nav-link-container">
@@ -73,7 +68,15 @@ function Navbar() {
             {item.name !== "Home" && item.name !== "Contact" && (
               <img src={whiteArrowDown} alt="arrow-down" width={13} />
             )}
-            {hoveredItem === index && <div className="hover-div"></div>}
+            {hoveredItem === index && item.listItems && (
+              <div className="hover-div">
+                {item.listItems.map((subItem, subIndex) => (
+                  <div key={subIndex}>
+                    {subItem} <hr />{" "}
+                  </div>
+                ))}
+              </div>
+            )}
           </Link>
           // </div>
         ))}
