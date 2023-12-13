@@ -87,7 +87,7 @@ a {
 }
 
 .navbar-link-item-container {
-  position: inherit; /* Container to position the hover div */
+  position: inherit;
 }
 
 .hover-div {
@@ -95,13 +95,28 @@ a {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: #fff;
+  background-color: lightgray;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 2px solid #fff;
   z-index: 10;
   top: 50px;
 }
 
 .navbar-link-item-container:hover .hover-div {
-  display: block; /* Show the div on hover */
+  display: block;
+}
+.nav-link-container a:not(:first-child):hover {
+  /* display: block; */
+}
+
+.bag-container {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-heart,
+.icon-plus {
+  width: 22px;
+  height: 22px;
 }

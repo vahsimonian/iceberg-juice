@@ -5,6 +5,12 @@ import searchIcon from "../assets/icons/search-2-line.png";
 import juiceIcon from "../assets/icons/juice-icon.png";
 import whiteArrowDown from "../assets/icons/white-down-arrow.png";
 import { navbarItems } from "../juiceData";
+import {
+  BsBagHeartFill,
+  BsBagHeart,
+  BsBagPlus,
+  BsBagPlusFill,
+} from "react-icons/bs";
 
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,6 +28,12 @@ function Navbar() {
 
   return (
     <nav id="navbar">
+      {/* <BsBagHeartFill /> */}
+      {/* <BsBagPlusFill /> */}
+      <div className="bag-container">
+        <BsBagHeart className="icon-heart" />
+        <BsBagPlus className="icon-plus" />
+      </div>
       <img src={juiceIcon} alt="juice" width={70} className="juice-icon" />
       <form action="" className="search-container">
         <input
@@ -42,12 +54,6 @@ function Navbar() {
       </form>
       <div className="nav-link-container">
         {navbarItems.map((item, index) => (
-          // <div
-          // className="navbar-link-item-container"
-          // onMouseEnter={() => setHoveredItem(index)}
-          // onMouseLeave={() => setHoveredItem(null)}
-          // key={item.id}
-          // >
           <Link
             className="navbar-link-item navbar-link-item-container"
             activeClass="active"

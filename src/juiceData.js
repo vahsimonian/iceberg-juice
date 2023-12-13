@@ -35,6 +35,7 @@ export const navbarItems = [
     id: 1,
     name: "Home",
     to: "home",
+    listItems: ["home"],
   },
   {
     id: 2,
