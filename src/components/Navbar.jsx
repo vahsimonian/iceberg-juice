@@ -4,10 +4,12 @@ import { Link } from "react-scroll";
 import searchIcon from "../assets/icons/search-2-line.png";
 import juiceIcon from "../assets/icons/juice-icon.png";
 import whiteArrowDown from "../assets/icons/white-down-arrow.png";
+import { navbarItems } from "../juiceData";
 
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleInputFocus = () => {
     setIsHovered(false);
@@ -39,54 +41,31 @@ function Navbar() {
         />
       </form>
       <div className="nav-link-container">
-        <Link
-          className="navbar-link-item"
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          classID="nav-link-item"
-        >
-          Home <img src={whiteArrowDown} alt="arrow-down" width={13} />
-        </Link>
-        <Link
-          className="navbar-link-item"
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          classID="nav-link-item"
-        >
-          About iK <img src={whiteArrowDown} alt="arrow-down" width={13} />
-        </Link>
-        <Link
-          className="navbar-link-item"
-          activeClass="active"
-          to="juices"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          classID="nav-link-item"
-        >
-          Products <img src={whiteArrowDown} alt="arrow-down" width={13} />
-        </Link>
-        <Link
-          className="navbar-link-item"
-          activeClass="contact"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          classID="nav-link-item"
-        >
-          Contact <img src={whiteArrowDown} alt="arrow-down" width={13} />
-        </Link>
+        {navbarItems.map((item, index) => (
+          // <div
+          // className="navbar-link-item-container"
+          // onMouseEnter={() => setHoveredItem(index)}
+          // onMouseLeave={() => setHoveredItem(null)}
+          // key={item.id}
+          // >
+          <Link
+            className="navbar-link-item navbar-link-item-container"
+            activeClass="active"
+            to={item.to}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            classID="nav-link-item"
+            onMouseEnter={() => setHoveredItem(index)}
+            onMouseLeave={() => setHoveredItem(null)}
+            key={item.id}
+          >
+            {item.name} <img src={whiteArrowDown} alt="arrow-down" width={13} />
+            {hoveredItem === index && <div className="hover-div"></div>}
+          </Link>
+          // </div>
+        ))}
       </div>
     </nav>
   );

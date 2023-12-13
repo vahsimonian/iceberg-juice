@@ -85,3 +85,23 @@ a {
 .search-focused {
   border-radius: 0 50% 50% 0;
 }
+
+.navbar-link-item-container {
+  position: inherit; /* Container to position the hover div */
+}
+
+.hover-div {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  z-index: 10;
+  top: 50px;
+}
+
+.navbar-link-item-container:hover .hover-div {
+  display: block; /* Show the div on hover */
+}

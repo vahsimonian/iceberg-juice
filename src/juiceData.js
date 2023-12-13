@@ -30,6 +30,29 @@ import tropicalSunrise from "../src/assets/juices/Tropical Sunrise.png";
 import zestyLemonade from "../src/assets/juices/Zesty Lemonade.png";
 // import all from "../src/assets/all.png";
 
+export const navbarItems = [
+  {
+    id: 1,
+    name: "Home",
+    to: "home",
+  },
+  {
+    id: 2,
+    name: "About",
+    to: "about",
+  },
+  {
+    id: 3,
+    name: "Products",
+    to: "products",
+  },
+  {
+    id: 4,
+    name: "Contact",
+    to: "contact",
+  },
+];
+
 export const juiceData = [
   {
     id: 1,
