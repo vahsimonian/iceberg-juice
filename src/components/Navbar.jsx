@@ -71,7 +71,7 @@ function Navbar() {
             {hoveredItem === index && item.listItems && (
               <div className="hover-div">
                 {item.listItems.map((subItem, subIndex) => (
-                  <div key={subIndex}>
+                  <div key={subIndex} className="list-item">
                     {subItem} <hr />{" "}
                   </div>
                 ))}
