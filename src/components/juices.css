@@ -1,9 +1,9 @@
 #juices {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets//bg-s/black-white-bg.png"),
-    linear-gradient(black, white, yellow, yellow);
-  background-blend-mode: darken;
+  background-image: url("../assets//bg-s/bg\ juices.png"),
+    linear-gradient(to right, black, white);
+  background-blend-mode: luminosity;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +19,11 @@
 }
 
 .juice-item-container {
-  background-image: url("../assets//bg-s/juices-bg.jpg");
+  background-image: url("../assets//bg-s/juices-bg.jpg"),
+    /* background-image: url("../assets/bg-s/bg.jpg"), */
+      linear-gradient(to right, white, white);
+  border-radius: 25px;
+  background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

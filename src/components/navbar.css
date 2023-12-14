@@ -7,9 +7,8 @@
   font-family: "Space Grotesk", sans-serif;
   gap: 35px;
   position: sticky;
-  background-image: url("../assets//bg-s/navbar-bg.png"),
-    /* linear-gradient(red, yellow, green, magenta, blue); */
-      linear-gradient(black, white);
+  background-image: url("../assets/bg-s/bg.jpg"),
+    linear-gradient(to right, magenta, white, green);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +22,7 @@
 
 .juice-icon {
   background-color: rgba(255, 255, 255, 0.8);
+
   border-radius: 50%;
   border: 1px solid black;
   margin: 5px;
@@ -128,7 +128,7 @@ a {
 .icon-heart:hover,
 .icon-plus:hover {
   color: black;
-  background-color: gray;
+  background-color: transparent;
 }
 
 .hover-div {
