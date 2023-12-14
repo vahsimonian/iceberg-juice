@@ -7,7 +7,7 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import { JuiceContext } from "../JuiceContext";
 
 function Juices() {
-  const [hovered, setHovered] = useState({});
+  const [hovered] = useState({});
   const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
     useContext(JuiceContext);
 

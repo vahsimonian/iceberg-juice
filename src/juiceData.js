@@ -44,20 +44,23 @@ export const navbarItems = [
     sections: {
       business: {
         title: "Our Business",
-        content: "Write about your business mission, vision, history here...",
+        content:
+          "Our Business at Iceberg Kampot is dedicated to bringing health and happiness to our customers' lives. Founded on the principles of sustainability, freshness, and taste, we've been delivering premium quality natural juices since 2023. Our mission is to use the finest organic ingredients to create invigorating juices that not only delight the taste buds but also nourish the body.",
       },
       history: {
         title: "Our History",
         content:
-          "Detail the history of your business, major milestones, and evolution...",
+          "Iceberg Kampot, launched in 2023, is a beacon of modernity in wellness beverages. Our brand is swiftly carving a niche with invigorating, trendsetting juices.",
       },
       mission: {
         title: "Our Mission",
-        content: "Describe the company's mission and future aspirations...",
+        content:
+          "Our Mission is to revolutionize how people enjoy juice. We aim to become a staple in every health-conscious individual's diet, providing a burst of energy and a touch of nature in every sip. As we look to the future, we aspire to expand our reach while maintaining our commitment to quality and community.",
       },
       team: {
         title: "Our Mission",
-        content: "Describe the company's mission and future aspirations...",
+        content:
+          "Our Team is the heart of Iceberg Kampot. A diverse group of passionate individuals, from experienced nutritionists to creative chefs, all united by a shared love for health and wellness. Our team's dedication ensures that every bottle of Iceberg Kampot is a testament to our commitment to excellence.",
       },
     },
   },
@@ -69,15 +72,18 @@ export const navbarItems = [
     sections: {
       catalogue: {
         title: "Product Catalogue",
-        content: "Information about your product range, specialties, etc...",
+        content:
+          "Our Product Catalogue showcases a vibrant variety of juices, each crafted to perfection. From the antioxidant-rich 'Berry Apple Twist' to the tropical escape 'Mango Pineapple Breeze', our catalogue has something for everyone. Explore our selections to find your perfect juice companion.",
       },
       services: {
         title: "Our Services",
-        content: "Details on the services offered by your business...",
+        content:
+          "Our Services extend beyond just juices. At Iceberg Kampot, we offer personalized nutrition consultations, subscription boxes tailored to your taste and health goals, and catering services for events that aim to impress with wholesome refreshments.",
       },
       products: {
         title: "Our Services",
-        content: "Details on the services offered by your business...",
+        content:
+          "Our Products are more than just drinks; they're an experience. Alongside our signature juices, we've introduced a line of health-boosting smoothies, energy shots, and a selection of vegan snacks that complement our beverage offerings. Every product is a promise of quality and purity.",
       },
     },
   },
