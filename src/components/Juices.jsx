@@ -73,8 +73,9 @@ function Juices() {
   return (
     <div id="juices">
       <div className="fruit-container">
+        <div className="fruits-backline"></div>
         {fourJuicesCircled.map((fruit) => (
-          <img src={fruit} alt="fruit" width={150} />
+          <img src={fruit} alt="fruit" />
         ))}
       </div>
       <div className="juice-item-container">{juiceItem}</div>

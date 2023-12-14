@@ -1,14 +1,55 @@
 #juices {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+}
+.fruit-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 40px;
+  width: 90vw;
+}
+.fruit-container img {
+  border-radius: 50%;
+  padding: 3px;
+  /* border: 1px solid white; */
+  background-image: linear-gradient(
+    to left,
+    yellow,
+    red,
+    green,
+    coral,
+    blue,
+    magenta
+  );
+  width: 80px;
+}
+
+.fruits-backline {
+  position: absolute;
+  top: 160px;
+  z-index: -1;
+  left: 0;
+  /* background-image: linear-gradient(
+    to left,
+    red,
+    yellow,
+    green,
+    coral,
+    blue,
+    magenta
+  ); */
+  background-color: white;
+  width: 100%;
+  height: 3px;
 }
 
 .juice-item-container {
+  border-top: 5px solid gray;
+  padding-top: 15px;
   gap: 5px;
   margin-inline: 15vw;
   gap: 15px;
-  border-radius: 10px;
+  /* border-radius: 0 10px; */
   height: 75vh;
   width: 70vw;
   display: flex;
@@ -19,7 +60,7 @@
 
 /* Style the scrollbar itself (width, background) */
 .juice-item-container::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 0;
 }
 
@@ -160,8 +201,4 @@
 .hr-desc {
   width: 60px;
   border: 1px solid #fff;
-}
-
-.fruit-container {
-  border: 1px solid magenta;
 }
