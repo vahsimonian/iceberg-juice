@@ -28,8 +28,6 @@ function Navbar() {
 
   return (
     <nav id="navbar">
-      {/* <BsBagHeartFill /> */}
-      {/* <BsBagPlusFill /> */}
       <div className="bag-container">
         {hasFavorites() ? ( // Call as a function
           <BsBagHeartFill className="icon-heart" />

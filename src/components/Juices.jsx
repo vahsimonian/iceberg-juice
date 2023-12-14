@@ -7,7 +7,6 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import { JuiceContext } from "../JuiceContext";
 
 function Juices() {
-  const [hovered] = useState({});
   const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
     useContext(JuiceContext);
 
@@ -55,11 +54,9 @@ function Juices() {
               <AiOutlineHeart style={{ color: "red" }} />
             )}
           </div>
-          {hovered && (
-            <div className="info-icon" onClick={handleSearch}>
-              <IoInformationCircleOutline />
-            </div>
-          )}
+          <div className="info-icon" onClick={handleSearch}>
+            <IoInformationCircleOutline />
+          </div>
           <div className="juice-p">
             <hr className="hr-price" />
             <p>{juice.price}</p>
