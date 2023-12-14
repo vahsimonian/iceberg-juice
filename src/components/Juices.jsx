@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import "./juices.css";
 import { juiceData, fourJuicesCircled } from "../juiceData";
 import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
