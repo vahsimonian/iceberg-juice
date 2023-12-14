@@ -29,6 +29,12 @@ import tropicalSmoothie from "../src/assets/juices/Tropical Smoothie.png";
 import tropicalSunrise from "../src/assets/juices/Tropical Sunrise.png";
 import zestyLemonade from "../src/assets/juices/Zesty Lemonade.png";
 // import all from "../src/assets/all.png";
+import imageOne from "../src/assets/fruits/1.png";
+import imageTwo from "../src/assets/fruits/2.png";
+import imageThree from "../src/assets/fruits/3.png";
+import imageFour from "../src/assets/fruits/4.png";
+
+export const fourJuicesCircled = [imageOne, imageTwo, imageThree, imageFour];
 
 export const navbarItems = [
   {

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "./juices.css";
-import { juiceData } from "../juiceData";
+import { juiceData, fourJuicesCircled } from "../juiceData";
 import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { IoInformationCircleOutline } from "react-icons/io5";
@@ -70,7 +70,16 @@ function Juices() {
     );
   });
 
-  return <div id="juices">{juiceItem}</div>;
+  return (
+    <div id="juices">
+      <div className="fruit-container">
+        {fourJuicesCircled.map((fruit) => (
+          <img src={fruit} alt="fruit" width={150} />
+        ))}
+      </div>
+      <div className="juice-item-container">{juiceItem}</div>
+    </div>
+  );
 }
 
 export default Juices;

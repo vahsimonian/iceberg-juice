@@ -1,29 +1,35 @@
 #juices {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 120px;
-  height: 75vh;
-  overflow: scroll;
-  max-width: 60vw;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.juice-item-container {
   gap: 5px;
   margin-inline: 15vw;
   gap: 15px;
   border-radius: 10px;
+  height: 75vh;
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  max-width: 70vw;
 }
 
 /* Style the scrollbar itself (width, background) */
-#juices::-webkit-scrollbar {
+.juice-item-container::-webkit-scrollbar {
   width: 5px;
   height: 0;
 }
 
 /* Style the scrollbar handle */
-#juices::-webkit-scrollbar-thumb {
+.juice-item-container::-webkit-scrollbar-thumb {
   background-color: #fff;
   border-radius: 15px;
 }
 
-#juices::-webkit-scrollbar-thumb:hover {
+.juice-item-container::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.658);
 }
 
@@ -54,9 +60,6 @@
 }
 
 .favorite-icon {
-  /* position: absolute;
-  transition: all 0.5s ease-in-out;
-  opacity: 0; */
   transition: all 0.5s ease-in-out;
   top: 0;
   left: 0;
@@ -157,4 +160,8 @@
 .hr-desc {
   width: 60px;
   border: 1px solid #fff;
+}
+
+.fruit-container {
+  border: 1px solid magenta;
 }
