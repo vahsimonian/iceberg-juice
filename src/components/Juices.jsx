@@ -5,6 +5,7 @@ import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { JuiceContext } from "../JuiceContext";
+import blackWhiteBg from "../assets/bg-s/black-white-bg.png";
 
 function Juices() {
   const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
@@ -73,10 +74,10 @@ function Juices() {
   return (
     <div id="juices">
       <div className="fruit-container">
-        <div className="fruits-backline"></div>
-        {fourJuicesCircled.map((fruit) => (
-          <img src={fruit} alt="fruit" />
-        ))}
+        <div className="black-white-bg"></div>
+        {/* {fourJuicesCircled.map((fruit) => (
+        ))} */}
+        {/* <img src={blackWhiteBg} alt="fruit" className="black-white-bg" /> */}
       </div>
       <div className="juice-item-container">{juiceItem}</div>
     </div>

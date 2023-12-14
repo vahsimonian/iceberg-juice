@@ -7,6 +7,13 @@
   font-family: "Space Grotesk", sans-serif;
   gap: 35px;
   position: sticky;
+  background-image: url("../assets//bg-s/navbar-bg.png"),
+    /* linear-gradient(red, yellow, green, magenta, blue); */
+      linear-gradient(black, white);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav-link-container {

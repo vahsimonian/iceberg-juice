@@ -1,6 +1,12 @@
 #juices {
   display: flex;
   flex-direction: column;
+  background-image: url("../assets//bg-s/black-white-bg.png"),
+    linear-gradient(black, white, yellow, yellow);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fruit-container {
   display: flex;
@@ -8,44 +14,17 @@
   margin-block: 40px;
   width: 90vw;
 }
-.fruit-container img {
-  border-radius: 50%;
-  padding: 3px;
-  /* border: 1px solid white; */
-  background-image: linear-gradient(
-    to left,
-    yellow,
-    red,
-    green,
-    coral,
-    blue,
-    magenta
-  );
-  width: 80px;
-}
 
-.fruits-backline {
-  position: absolute;
-  top: 160px;
-  z-index: -1;
-  left: 0;
-  /* background-image: linear-gradient(
-    to left,
-    red,
-    yellow,
-    green,
-    coral,
-    blue,
-    magenta
-  ); */
-  background-color: white;
-  width: 100%;
-  height: 3px;
+.black-white-bg {
 }
 
 .juice-item-container {
-  border-top: 5px solid gray;
-  padding-top: 15px;
+  background-image: url("../assets//bg-s/juices-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid gray;
+  padding: 70px;
   gap: 5px;
   margin-inline: 15vw;
   gap: 15px;
