@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./juices.css";
 import { juiceData } from "../juiceData";
 import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { IoInformationCircleOutline } from "react-icons/io5";
+import { JuiceContext } from "../JuiceContext";
 
 function Juices() {
-  const [filledInShop, setFilledInShop] = useState({});
-  const [favorites, setFavorites] = useState({});
   const [hovered, setHovered] = useState({});
+  const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
+    useContext(JuiceContext);
 
   const juiceItem = juiceData.map((juice) => {
     const isFilled = filledInShop[juice.id];
@@ -16,20 +17,6 @@ function Juices() {
 
     const isFavorite = favorites[juice.id];
     const favoriteIconClass = `favorite-icon ${isFavorite ? "filled" : ""}`;
-
-    const toggleFavorite = () => {
-      setFavorites((prevState) => ({
-        ...prevState,
-        [juice.id]: !prevState[juice.id],
-      }));
-    };
-
-    const toggleFilledInShop = () => {
-      setFilledInShop((prevState) => ({
-        ...prevState,
-        [juice.id]: !prevState[juice.id],
-      }));
-    };
 
     const handleSearch = (event) => {
       event.preventDefault();
@@ -48,14 +35,20 @@ function Juices() {
         <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
-          <div onClick={toggleFilledInShop} className={iconClass}>
+          <div
+            onClick={() => toggleFilledInShop(juice.id)}
+            className={iconClass}
+          >
             {isFilled ? (
               <RiShoppingCartFill style={{ color: "black" }} />
             ) : (
               <RiShoppingCartLine style={{ color: "black" }} />
             )}
           </div>
-          <div onClick={toggleFavorite} className={favoriteIconClass}>
+          <div
+            onClick={() => toggleFavorite(juice.id)}
+            className={favoriteIconClass}
+          >
             {isFavorite ? (
               <AiFillHeart style={{ color: "red" }} />
             ) : (

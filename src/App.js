@@ -5,16 +5,19 @@ import Home from "./components/Home";
 import Juices from "./components/Juices";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
+import { JuiceProvider } from "./JuiceContext";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Home />
-      {/* <Juices /> */}
-      <Search />
-      <Contact />
-      <Footer />
+      <JuiceProvider>
+        <Navbar />
+        <Home />
+        <Juices />
+        <Search />
+        <Contact />
+        <Footer />
+      </JuiceProvider>
     </div>
   );
 }

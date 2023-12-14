@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import whiteArrowDown from "../assets/icons/white-down-arrow.png";
+import React, { useContext, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 import searchIcon from "../assets/icons/search-2-line.png";
 import juiceIcon from "../assets/icons/juice-icon.png";
-import whiteArrowDown from "../assets/icons/white-down-arrow.png";
 import { navbarItems } from "../juiceData";
+import { JuiceContext } from "../JuiceContext";
 import {
   BsBagHeartFill,
   BsBagHeart,
@@ -13,6 +14,7 @@ import {
 } from "react-icons/bs";
 
 function Navbar() {
+  const { hasFavorites, hasCartItems } = useContext(JuiceContext);
   const [isFocused, setIsFocused] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
 
@@ -29,8 +31,16 @@ function Navbar() {
       {/* <BsBagHeartFill /> */}
       {/* <BsBagPlusFill /> */}
       <div className="bag-container">
-        <BsBagHeart className="icon-heart" />
-        <BsBagPlus className="icon-plus" />
+        {hasFavorites() ? ( // Call as a function
+          <BsBagHeartFill className="icon-heart" />
+        ) : (
+          <BsBagHeart className="icon-heart" />
+        )}
+        {hasCartItems() ? ( // Call as a function
+          <BsBagPlusFill className="icon-plus" />
+        ) : (
+          <BsBagPlus className="icon-plus" />
+        )}
       </div>
       <img src={juiceIcon} alt="juice" width={70} className="juice-icon" />
       <form action="" className="search-container">

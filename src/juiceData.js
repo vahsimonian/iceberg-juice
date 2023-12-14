@@ -41,18 +41,50 @@ export const navbarItems = [
     name: "About",
     to: "about",
     listItems: ["Business", "Hitory", "Mission", "Team"],
+    sections: {
+      business: {
+        title: "Our Business",
+        content: "Write about your business mission, vision, history here...",
+      },
+      history: {
+        title: "Our History",
+        content:
+          "Detail the history of your business, major milestones, and evolution...",
+      },
+      mission: {
+        title: "Our Mission",
+        content: "Describe the company's mission and future aspirations...",
+      },
+      team: {
+        title: "Our Mission",
+        content: "Describe the company's mission and future aspirations...",
+      },
+    },
   },
   {
     id: 3,
     name: "Products",
     to: "products",
-    listItems: ["Catalogue", "Services", "Products", "We Worldwide"],
+    listItems: ["Products", "Catalogue", "Services", "We Worldwide"],
+    sections: {
+      catalogue: {
+        title: "Product Catalogue",
+        content: "Information about your product range, specialties, etc...",
+      },
+      services: {
+        title: "Our Services",
+        content: "Details on the services offered by your business...",
+      },
+      products: {
+        title: "Our Services",
+        content: "Details on the services offered by your business...",
+      },
+    },
   },
   {
     id: 4,
     name: "Contact",
     to: "contact",
-    listItems: ["Social Media", "Contact us"],
   },
 ];
 
