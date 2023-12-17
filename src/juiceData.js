@@ -46,7 +46,7 @@ export const navbarItems = [
     id: 2,
     name: "About",
     to: "about",
-    listItems: ["Business", "Hitory", "Mission", "Team"],
+    listItems: ["Business", "History", "Mission", "Team"],
     sections: {
       business: {
         title: "Our Business",
