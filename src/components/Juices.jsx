@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "./juices.css";
-import { juiceData, fourJuicesCircled } from "../juiceData";
+import { juiceData } from "../juiceData";
+// import {  fourJuicesCircled } from "../juiceData";
 import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { JuiceContext } from "../JuiceContext";
-import blackWhiteBg from "../assets/bg-s/black-white-bg.png";
+// import blackWhiteBg from "../assets/bg-s/black-white-bg.png";
 
 function Juices() {
   const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
