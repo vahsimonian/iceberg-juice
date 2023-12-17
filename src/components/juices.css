@@ -7,6 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 .fruit-container {
   display: flex;
@@ -15,15 +16,11 @@
   width: 90vw;
 }
 
-.black-white-bg {
-}
-
 .juice-item-container {
-  background-image: url("../assets//bg-s/juices-bg.jpg"),
-    /* background-image: url("../assets/bg-s/bg.jpg"), */
-      linear-gradient(to right, white, white);
+  background-image: url("../assets/bg-s/bg.jpg"),
+    linear-gradient(to right, white, pink);
   border-radius: 25px;
-  background-blend-mode: darken;
+  background-blend-mode: luminosity;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +36,7 @@
   flex-wrap: wrap;
   overflow: scroll;
   max-width: 70vw;
+  /* display: none; */
 }
 
 /* Style the scrollbar itself (width, background) */
