@@ -111,6 +111,7 @@ export const juiceData = [
     price: "$3.99",
     available: true,
     img: redDelight,
+    taste: ["sweet", "sour"],
   },
   {
     id: 2,
@@ -122,6 +123,7 @@ export const juiceData = [
     price: "$4.50",
     available: true,
     img: greenZest,
+    taste: ["sour"],
   },
   {
     id: 3,
@@ -133,6 +135,7 @@ export const juiceData = [
     price: "$4.25",
     available: true,
     img: tropicalSunrise,
+    taste: ["sweet"],
   },
   {
     id: 4,
@@ -144,6 +147,7 @@ export const juiceData = [
     price: "$5.00",
     available: true,
     img: purplePotion,
+    taste: ["sweet", "sour"],
   },
   {
     id: 5,
@@ -155,6 +159,7 @@ export const juiceData = [
     price: "$3.75",
     available: true,
     img: orangeBoost,
+    taste: ["sweet", "sour"],
   },
   {
     id: 6,
@@ -166,6 +171,7 @@ export const juiceData = [
     price: "$4.00",
     available: true,
     img: pinkParadise,
+    taste: ["sweet", "sour"],
   },
   {
     id: 7,
@@ -177,6 +183,7 @@ export const juiceData = [
     price: "$3.99",
     available: true,
     img: sunsetGlow,
+    taste: ["sweet", "sour"],
   },
   {
     id: 8,
@@ -188,6 +195,7 @@ export const juiceData = [
     price: "$4.20",
     available: true,
     img: greenRefresh,
+    taste: ["sweet", "bitter"],
   },
   {
     id: 9,
@@ -199,6 +207,7 @@ export const juiceData = [
     price: "$3.80",
     available: true,
     img: zestyLemonade,
+    taste: ["sour", "bitter"],
   },
   {
     id: 10,
@@ -210,6 +219,7 @@ export const juiceData = [
     price: "$4.50",
     available: true,
     img: rubyRed,
+    taste: ["sweet", "sour"],
   },
 
   {
@@ -222,6 +232,7 @@ export const juiceData = [
     price: "$4.75",
     available: true,
     img: dragonWatermelonBurst,
+    taste: ["sweet", "sour"],
   },
   {
     id: 12,
@@ -233,6 +244,7 @@ export const juiceData = [
     price: "$3.50",
     available: true,
     img: mintyFreshness,
+    taste: ["sour"],
   },
   {
     id: 13,
@@ -244,6 +256,7 @@ export const juiceData = [
     price: "$4.00",
     available: true,
     img: beetFusion,
+    taste: ["sweet", "bitter"],
   },
   {
     id: 14,
@@ -255,6 +268,7 @@ export const juiceData = [
     price: "$3.95",
     available: true,
     img: tropicalSmooth,
+    taste: ["sweet"],
   },
   {
     id: 15,
@@ -266,6 +280,7 @@ export const juiceData = [
     price: "$4.50",
     available: true,
     img: berryPurple,
+    taste: ["sweet", "sour"],
   },
   {
     id: 16,
@@ -277,6 +292,7 @@ export const juiceData = [
     price: "$4.25",
     available: true,
     img: autumnHarvestDelight,
+    taste: ["sweet", "bitter"],
   },
   {
     id: 17,
@@ -288,6 +304,7 @@ export const juiceData = [
     price: "$4.75",
     available: true,
     img: greenDetox,
+    taste: ["sweet", "sour"],
   },
   {
     id: 18,
@@ -299,6 +316,7 @@ export const juiceData = [
     price: "$3.80",
     available: true,
     img: savoryRed,
+    taste: ["sweet", "bitter"],
   },
   {
     id: 19,
@@ -310,6 +328,7 @@ export const juiceData = [
     price: "$4.00",
     available: true,
     img: lemonPearFusion,
+    taste: ["sweet", "sour"],
   },
   {
     id: 20,
@@ -321,6 +340,7 @@ export const juiceData = [
     price: "$4.50",
     available: true,
     img: purpleSweetness,
+    taste: ["sweet"],
   },
   {
     id: 21,
@@ -332,6 +352,7 @@ export const juiceData = [
     price: "$5.00",
     available: true,
     img: greenPower,
+    taste: ["sweet", "sour"],
   },
   {
     id: 22,
@@ -343,6 +364,7 @@ export const juiceData = [
     price: "$4.20",
     available: true,
     img: sunriseBlend,
+    taste: ["sweet"],
   },
 
   {
@@ -355,6 +377,7 @@ export const juiceData = [
     price: "$3.95",
     available: true,
     img: applePearMedley,
+    taste: ["sweet"],
   },
   {
     id: 24,
@@ -366,6 +389,7 @@ export const juiceData = [
     price: "$4.25",
     available: true,
     img: cranAppleSplash,
+    taste: ["sweet", "sour"],
   },
   {
     id: 25,
@@ -377,6 +401,7 @@ export const juiceData = [
     price: "$4.75",
     available: true,
     img: currantBlueFusion,
+    taste: ["sweet", "sour"],
   },
   {
     id: 26,
@@ -388,6 +413,7 @@ export const juiceData = [
     price: "$3.85",
     available: true,
     img: autumnHarves,
+    taste: ["sweet", "bitter"],
   },
   {
     id: 27,
@@ -399,6 +425,7 @@ export const juiceData = [
     price: "$5.00",
     available: true,
     img: melonDragonFusion,
+    taste: ["sweet"],
   },
   {
     id: 28,
@@ -410,6 +437,7 @@ export const juiceData = [
     price: "$3.50",
     available: true,
     img: coolingBreeze,
+    taste: ["sour"],
   },
   {
     id: 29,
@@ -421,6 +449,7 @@ export const juiceData = [
     price: "$4.50",
     available: true,
     img: citrusSurge,
+    taste: ["sweet", "sour"],
   },
   {
     id: 30,
@@ -432,5 +461,6 @@ export const juiceData = [
     price: "$4.00",
     available: true,
     img: tropicalSmoothie,
+    taste: ["sweet"],
   },
 ];
