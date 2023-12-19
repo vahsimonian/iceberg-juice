@@ -6,13 +6,14 @@
   align-items: center;
   font-family: "Space Grotesk", sans-serif;
   gap: 35px;
-  position: sticky;
+  position: fixed;
   background-image: url("../assets/bg-s/bg.jpg"),
     linear-gradient(to right, magenta, white, green);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 10;
 }
 
 .nav-link-container {
