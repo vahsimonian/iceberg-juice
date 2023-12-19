@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Home from "./components/Home";
 import Juices from "./components/Juices";
 import Navbar from "./components/Navbar";
-import Search from "./components/Search";
+// import Search from "./components/Search";
 import { JuiceProvider } from "./JuiceContext";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Home />
         <Juices />
-        <Search />
+        {/* <Search /> */}
         <Contact />
         <Footer />
       </JuiceProvider>

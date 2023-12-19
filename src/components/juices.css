@@ -17,7 +17,7 @@
 }
 
 .juice-item-container {
-  background-image: url("../assets/bg-s/bg.jpg"),
+  background-image: url("../assets/bg-s/home-item.png"),
     linear-gradient(to right, white, pink);
   border-radius: 25px;
   background-blend-mode: luminosity;
@@ -62,7 +62,7 @@
   margin-inline-start: 25px;
   border-radius: 7.5px;
   color: #000;
-  background-image: url("../assets/bg-s/home-item.png");
+  background-image: url("../assets/bg-s/black-white-bg.png");
   background-size: cover;
   background-position: 15px;
   background-blend-mode: luminosity;
