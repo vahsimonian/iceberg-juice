@@ -1,9 +1,9 @@
 #juices {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets//bg-s/bg\ juices.png"),
+  background-image: url("../assets/bg-s/black-white-bg.png"),
     linear-gradient(to right, black, white);
-  background-blend-mode: luminosity;
+  background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +17,7 @@
 }
 
 .juice-item-container {
-  background-image: url("../assets/bg-s/home-item.png"),
-    linear-gradient(to right, white, pink);
+  background-image: url("../assets/bg-s/juices-bg2.png");
   border-radius: 25px;
   background-blend-mode: luminosity;
   background-position: center;
@@ -26,10 +25,8 @@
   background-size: cover;
   border-top: 1px solid gray;
   padding: 70px;
-  gap: 5px;
   margin-inline: 15vw;
   gap: 15px;
-  /* border-radius: 0 10px; */
   height: 75vh;
   width: 70vw;
   display: flex;
@@ -62,7 +59,7 @@
   margin-inline-start: 25px;
   border-radius: 7.5px;
   color: #000;
-  background-image: url("../assets/bg-s/black-white-bg.png");
+  background-image: url("../assets/bg-s/home-item.png");
   background-size: cover;
   background-position: 15px;
   background-blend-mode: luminosity;
