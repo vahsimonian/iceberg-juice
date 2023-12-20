@@ -1,25 +1,26 @@
 #juices {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/bg-s/black-white-bg.png"),
-    linear-gradient(to right, black, white);
+  /* background-image: url("../assets/bg-s/black-white-bg.png"),
+    linear-gradient(to right, black, white); */
   background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-top: 140px;
+  padding-bottom: 7.5px;
+  background-image: url("../assets/bg-s/juice-bg3.jpg"),
+    linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73));
+  background-blend-mode: lighten;
 }
 .fruit-container {
   display: flex;
   justify-content: space-evenly;
-  margin-block: 40px;
   width: 90vw;
 }
 
 .juice-item-container {
-  background-image: url("../assets/bg-s/juices-bg2.png");
-  border-radius: 25px;
-  background-blend-mode: luminosity;
+  border-radius: 10px 10px 0 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

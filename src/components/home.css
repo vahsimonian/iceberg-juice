@@ -1,8 +1,9 @@
 #home {
   height: 100vh;
   max-width: 100vw;
-  /* background-image: url("../src/assets/bg-s/contacat-bg.png"); */
-  background-image: url("../assets/bg-s/index-bg.png");
+  background-image: url("../assets/bg-s/index-bg.png"),
+    linear-gradient(to right, rgb(117, 159, 117), rgb(188, 171, 147));
+  background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
