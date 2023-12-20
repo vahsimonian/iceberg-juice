@@ -10,7 +10,7 @@ import { RxLinkedinLogo } from "react-icons/rx";
 function Contact() {
   return (
     <div id="contact">
-      <RiInstagramFill className="insgram-icon icons" />
+      <RiInstagramFill className="icons" />
       {/* <RiInstagramLine className="insgram-icon" /> */}
       <RiFacebookCircleFill className="icons" />
       {/* <RiFacebookCircleLine /> */}
