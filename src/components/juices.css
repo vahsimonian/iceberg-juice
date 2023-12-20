@@ -9,7 +9,7 @@
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 7.5px;
-  background-image: url("../assets/bg-s/juice-bg3.jpg"),
+  background-image: url("../assets/bg-s/juices-bg4.png"),
     linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73));
   background-blend-mode: lighten;
 }
@@ -20,13 +20,12 @@
 }
 
 .juice-item-container {
-  border-radius: 10px 10px 0 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 1px solid gray;
-  padding: 70px;
-  margin-inline: 15vw;
+  border-top: 1px solid green;
+  padding: 70px 70px 70px 0;
+  margin-inline: 3vw;
   gap: 15px;
   height: 75vh;
   width: 70vw;
@@ -34,7 +33,6 @@
   flex-wrap: wrap;
   overflow: scroll;
   max-width: 70vw;
-  /* display: none; */
 }
 
 /* Style the scrollbar itself (width, background) */
@@ -45,7 +43,7 @@
 
 /* Style the scrollbar handle */
 .juice-item-container::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: green;
   border-radius: 15px;
 }
 
@@ -54,8 +52,9 @@
 }
 
 .juice-item {
-  width: 200px;
-  height: 250px;
+  width: 20vw;
+  /* min-width: 200px; */
+  height: 40vh;
   font-size: 7.5px;
   margin-inline-start: 25px;
   border-radius: 7.5px;
@@ -70,7 +69,7 @@
   box-shadow: 0 0 7px 1px rgb(255, 255, 255, 0.8);
 }
 
-.shopping-cart-icon {
+/* .shopping-cart-icon {
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
@@ -88,6 +87,26 @@
   position: inherit;
   margin-top: 227px;
   margin-left: 161px;
+  font-size: 15px;
+} */
+
+.shopping-cart-icon {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute; /* Changed to absolute */
+  top: 5px; /* Adjust as needed */
+  right: 5px; /* Adjust as needed */
+  font-size: 15px;
+}
+
+.favorite-icon {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute; /* Changed to absolute */
+  top: 5px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed, this should be further left from the shopping cart icon */
   font-size: 15px;
 }
 

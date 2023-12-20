@@ -33,7 +33,7 @@ function Juices() {
         style={{ backgroundColor: "white" }}
         key={juice.id}
       >
-        <h2 style={{ backgroundColor: juice.color }}>{juice.title}</h2>
+        <h2 style={{ backgroundColor: "black" }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
           <div
