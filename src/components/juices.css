@@ -69,13 +69,14 @@
   box-shadow: 0 0 7px 1px rgb(255, 255, 255, 0.8);
 }
 
-/* .shopping-cart-icon {
+.shopping-cart-icon {
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
   margin-top: 227px;
   margin-left: 179px;
   font-size: 15px;
+  position: inherit;
 }
 
 .favorite-icon {
@@ -87,26 +88,6 @@
   position: inherit;
   margin-top: 227px;
   margin-left: 161px;
-  font-size: 15px;
-} */
-
-.shopping-cart-icon {
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  cursor: pointer;
-  position: absolute; /* Changed to absolute */
-  top: 5px; /* Adjust as needed */
-  right: 5px; /* Adjust as needed */
-  font-size: 15px;
-}
-
-.favorite-icon {
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  cursor: pointer;
-  position: absolute; /* Changed to absolute */
-  top: 5px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed, this should be further left from the shopping cart icon */
   font-size: 15px;
 }
 
