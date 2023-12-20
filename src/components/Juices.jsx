@@ -33,29 +33,26 @@ function Juices() {
         style={{ backgroundColor: "white" }}
         key={juice.id}
       >
-        <h2 style={{ backgroundColor: "black" }}>{juice.title}</h2>
+        <h2 style={{ backgroundColor: "darkblue" }}>{juice.title}</h2>
         <img src={juice.img} alt="juice" onClick={handleSearch} />
+        <div onClick={() => toggleFilledInShop(juice.id)} className={iconClass}>
+          {isFilled ? (
+            <RiShoppingCartFill style={{ color: "black" }} />
+          ) : (
+            <RiShoppingCartLine style={{ color: "black" }} />
+          )}
+        </div>
+        <div
+          onClick={() => toggleFavorite(juice.id)}
+          className={favoriteIconClass}
+        >
+          {isFavorite ? (
+            <AiFillHeart style={{ color: "red" }} />
+          ) : (
+            <AiOutlineHeart style={{ color: "red" }} />
+          )}
+        </div>
         <div className="color-overlay" style={{ backgroundColor: juice.color }}>
-          <div
-            onClick={() => toggleFilledInShop(juice.id)}
-            className={iconClass}
-          >
-            {isFilled ? (
-              <RiShoppingCartFill style={{ color: "black" }} />
-            ) : (
-              <RiShoppingCartLine style={{ color: "black" }} />
-            )}
-          </div>
-          <div
-            onClick={() => toggleFavorite(juice.id)}
-            className={favoriteIconClass}
-          >
-            {isFavorite ? (
-              <AiFillHeart style={{ color: "red" }} />
-            ) : (
-              <AiOutlineHeart style={{ color: "red" }} />
-            )}
-          </div>
           <div className="info-icon" onClick={handleSearch}>
             <IoInformationCircleOutline />
           </div>

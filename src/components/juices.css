@@ -73,21 +73,19 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
-  margin-top: 227px;
-  margin-left: 179px;
+  right: 1.5px;
+  bottom: 0;
   font-size: 15px;
-  position: inherit;
+  position: absolute;
 }
 
 .favorite-icon {
   transition: all 0.5s ease-in-out;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 17.5px;
   opacity: 0;
   cursor: pointer;
-  position: inherit;
-  margin-top: 227px;
-  margin-left: 161px;
+  position: absolute;
   font-size: 15px;
 }
 
