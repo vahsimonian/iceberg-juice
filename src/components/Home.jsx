@@ -6,6 +6,7 @@ function Home() {
     <div id="home">
       <div className="desc-container">
         <h1 className="home-title">Iceberg Kampot</h1>
+        <hr />
         <p className="juice-desc">
           "Iceberg Kampot," a burgeoning juice factory that prides itself on
           being at the heart of Cambodia's famed Kampot region. This factory has
