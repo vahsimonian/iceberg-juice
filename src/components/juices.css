@@ -1,8 +1,6 @@
 #juices {
   display: flex;
   flex-direction: column;
-  /* background-image: url("../assets/bg-s/black-white-bg.png"),
-    linear-gradient(to right, black, white); */
   background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,13 +33,11 @@
   max-width: 70vw;
 }
 
-/* Style the scrollbar itself (width, background) */
 .juice-item-container::-webkit-scrollbar {
   width: 10px;
   height: 0;
 }
 
-/* Style the scrollbar handle */
 .juice-item-container::-webkit-scrollbar-thumb {
   background-color: green;
   border-radius: 15px;
@@ -53,7 +49,6 @@
 
 .juice-item {
   width: 20vw;
-  /* min-width: 200px; */
   height: 40vh;
   font-size: 7.5px;
   margin-inline-start: 25px;
@@ -110,8 +105,8 @@
 .color-overlay {
   position: absolute;
   top: 0;
-  left: 0; /* Adjust to cover half the image */
-  width: 35%; /* This covers the remaining half */
+  left: 0;
+  width: 35%;
   height: 100%;
   background-color: white;
   border-radius: 5px 0 0 5px;
@@ -128,15 +123,14 @@
   margin-block: 12.5px;
   max-width: 15vw;
   max-width: 60%;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.1s ease-in-out;
   left: 10px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 .juice-item img:hover {
-  scale: 1.1;
-  /* border: none; */
+  scale: 2.5;
 }
 
 .juice-item h2 {
