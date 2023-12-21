@@ -1,6 +1,7 @@
 #home {
   height: 100vh;
   max-width: 100vw;
+  padding-top: 80px;
   background-image: url("../assets/bg-s/index-bg.png"),
     linear-gradient(to right, rgb(117, 159, 117), rgb(188, 171, 147));
   background-blend-mode: luminosity;
@@ -10,8 +11,28 @@
   position: relative;
 }
 
+.home-title {
+  font-family: "Comme", cursive;
+  color: green;
+  padding-bottom: 15px;
+}
+
+.desc-container {
+  border-radius: 5px;
+  max-width: 400px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
 .juice-desc {
+  border-radius: 5px;
+  padding: 12.5px;
   max-width: 45vw;
   position: inherit;
   top: 100px;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgba(15, 15, 15, 0.5);
+  font-size: 0.8rem;
 }
