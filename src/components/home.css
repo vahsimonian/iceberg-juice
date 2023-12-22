@@ -1,9 +1,12 @@
 #home {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  grid-gap: 3px;
   height: 100vh;
-  max-width: 100vw;
   padding-top: 80px;
   background-image: url("../assets/bg-s/index-bg.png"),
-    linear-gradient(to right, rgb(117, 159, 117), rgb(188, 171, 147));
+    linear-gradient(to right, rgb(122, 171, 122), rgb(188, 171, 147));
   background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,34 +14,55 @@
   position: relative;
 }
 
-.home-title {
-  font-family: "Comme", cursive;
-  color: green;
-  padding-bottom: 15px;
-}
-
 .desc-container {
-  position: absolute;
-  right: 50px;
-  top: 50px;
   border-radius: 5px;
-  padding: 50px;
   display: flex;
   flex-direction: column;
-  max-width: 45vw;
-}
-
-hr {
-  height: 1px;
-  background-color: grey;
+  max-width: 300px;
+  border: 1px solid magenta;
+  padding: 5px 25px;
 }
 
 .juice-desc {
   border-radius: 5px;
-  position: inherit;
-  top: 100px;
   font-family: "Caveat", cursive;
   color: green;
   font-size: 0.9rem;
-  padding-top: 25px;
+  padding-top: 5px;
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: grey;
+}
+
+.home-title {
+  font-family: "Comme", cursive;
+  color: green;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+
+.special-offers-container {
+  border: 1px solid magenta;
+  height: 120%;
+  padding: 5px 15px;
+}
+
+.special-offers-container > * {
+  margin-top: 5px;
+}
+
+.special-offer {
+  /* border: 1px solid magenta; */
+}
+
+.special-offer-h2 {
+  font-size: 1.2rem;
+  font-family: "Caveat", cursive;
+}
+.special-offer-p {
+  font-size: 0.8rem;
+  font-family: "Caveat", cursive;
 }
