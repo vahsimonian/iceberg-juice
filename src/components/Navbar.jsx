@@ -17,6 +17,11 @@ function Navbar() {
   const { hasFavorites, hasCartItems } = useContext(JuiceContext);
   const [isFocused, setIsFocused] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
 
   const handleInputFocus = () => {
     setIsFocused(true);
@@ -55,7 +60,12 @@ function Navbar() {
           alt="search"
         />
       </form>
-      <div className="nav-link-container">
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={`nav-link-container ${menuOpen ? "show" : ""}`}>
         {navbarItems.map((item, index) => (
           <Link
             className={`navbar-link-item navbar-link-item-container ${

@@ -164,3 +164,56 @@ hr {
   margin: 1px;
   width: 90%;
 }
+
+/* Initially hide the hamburger menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/* Hide navbar links on small screens */
+@media (max-width: 500px) {
+  .nav-link-container {
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    right: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Show navbar links when hamburger is hovered */
+  .nav-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  /* Styling changes for navbar links on small screens */
+  .navbar-link-item {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: 10;
+}
