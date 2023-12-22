@@ -165,7 +165,6 @@ hr {
   width: 90%;
 }
 
-/* Initially hide the hamburger menu */
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -178,7 +177,6 @@ hr {
   margin: 6px 0;
 }
 
-/* Hide navbar links on small screens */
 @media (max-width: 500px) {
   .nav-link-container {
     display: none;
@@ -192,7 +190,6 @@ hr {
     display: block;
   }
 
-  /* Show navbar links when hamburger is hovered */
   .nav-link-container {
     display: flex;
     flex-direction: column;
@@ -200,7 +197,6 @@ hr {
     padding: 10px;
   }
 
-  /* Styling changes for navbar links on small screens */
   .navbar-link-item {
     padding: 10px;
     width: 100%;

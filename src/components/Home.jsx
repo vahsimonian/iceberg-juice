@@ -48,7 +48,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <div></div>
+      <div className="free-div"></div>
       <div className="desc-container">
         <h1 className="home-title">Iceberg Kampot</h1>
         <hr className="hr" />
@@ -63,6 +63,7 @@ function Home() {
           doorstep.
         </p>
       </div>
+      <div className="image-container"></div>
     </div>
   );
 }

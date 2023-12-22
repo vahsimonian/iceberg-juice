@@ -1,6 +1,6 @@
 #home {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px 300px;
   grid-gap: 3px;
   height: 100vh;
@@ -14,13 +14,20 @@
   position: relative;
 }
 
+.image-container {
+  border: 1px solid magenta;
+  grid-column: 1 / -1;
+  margin-right: 50px;
+}
+
 .desc-container {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  /* max-width: 355px; */
   border: 1px solid magenta;
-  padding: 5px 25px;
+  padding: 5px 10px;
+  margin-inline-end: 15px;
 }
 
 .juice-desc {
@@ -44,9 +51,13 @@
   font-size: 1rem;
 }
 
+.free-div {
+  border: 1px solid magenta;
+}
+
 .special-offers-container {
   border: 1px solid magenta;
-  height: 120%;
+  /* height: 120%; */
   padding: 5px 15px;
 }
 
