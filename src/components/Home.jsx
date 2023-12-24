@@ -15,6 +15,7 @@ function Home() {
           </p>
         </div>
         <div className="special-offer">
+          <hr id="hr" />
           <h2 className="special-offer-h2">First-Time Buyer Special: </h2>
           <p className="special-offer-p">
             New to Iceberg Kampot? We welcome you with open arms and a special
@@ -23,6 +24,7 @@ function Home() {
           </p>
         </div>
         <div className="special-offer">
+          <hr id="hr" />
           <h2 className="special-offer-h2">Loyalty Rewarded: </h2>
           <p className="special-offer-p">
             Our repeat customers are the pillars of our success. Enjoy a 'Buy 5,
@@ -31,6 +33,7 @@ function Home() {
           </p>
         </div>
         <div className="special-offer">
+          <hr id="hr" />
           <h2 className="special-offer-h2">Family Pack Fiesta: </h2>
           <p className="special-offer-p">
             Embrace healthy living for the whole family with our Family Pack
@@ -40,6 +43,7 @@ function Home() {
           </p>
         </div>
         <div className="special-offer">
+          <hr id="hr" />
           <h2 className="special-offer-h2">Referral Rewards: </h2>
           <p className="special-offer-p">
             Spread the joy of health! Refer a friend and both of you can enjoy a

@@ -14,11 +14,10 @@
 .icons {
   color: black;
   cursor: pointer;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-size: 25px;
 }
 .icons:hover {
   color: green;
-  scale: 1.4;
-  transform: rotate(1440deg);
+  scale: 1.1;
 }

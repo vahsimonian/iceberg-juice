@@ -1,38 +1,38 @@
 #home {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 33% 37% 28%;
+  grid-template-rows: 40% 37.8% 21.3%;
   grid-gap: 3px;
   height: 100vh;
   padding-top: 80px;
   background-image: url("../assets/bg-s/index-bg.png"),
-    linear-gradient(to right, rgb(122, 171, 122), rgb(188, 171, 147));
+    linear-gradient(to right, rgb(139, 192, 89), rgb(188, 171, 147));
   background-blend-mode: luminosity;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
+#home > * {
+  margin-inline-start: 10px;
+}
 
 .image-container {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   grid-column: 1 / -1;
-  margin-right: 50px;
 }
 
 .desc-container {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* max-width: 355px; */
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   padding: 5px 10px;
-  margin-inline-end: 15px;
 }
 
 .juice-desc {
   border-radius: 5px;
-  font-family: "Caveat", cursive;
+  font-family: "Comme", cursive;
   color: green;
   font-size: 0.9rem;
   padding-top: 5px;
@@ -42,6 +42,7 @@
   width: 90%;
   height: 1px;
   background-color: grey;
+  margin-block: 15px;
 }
 
 .home-title {
@@ -52,17 +53,21 @@
 }
 
 .free-div {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 }
 
 .special-offers-container {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   /* height: 120%; */
   padding: 5px 15px;
 }
 
-.special-offers-container > * {
-  margin-top: 5px;
+.special-offers-container #hr {
+  background-color: rgb(147, 165, 101);
+  width: 90%;
+  height: 1px;
+  /* background-color: grey; */
+  margin-block: 15px;
 }
 
 .special-offer {
@@ -71,9 +76,10 @@
 
 .special-offer-h2 {
   font-size: 1.2rem;
-  font-family: "Caveat", cursive;
+  font-family: "Comme", cursive;
 }
 .special-offer-p {
-  font-size: 0.8rem;
-  font-family: "Caveat", cursive;
+  font-size: 0.9rem;
+  font-family: "Comme", cursive;
+  color: black;
 }
