@@ -8,8 +8,8 @@
   gap: 35px;
   position: fixed;
   background-image: url("../assets/bg-s/bg.jpg"),
-    linear-gradient(to right, magenta, white, green);
-  background-blend-mode: darken;
+    linear-gradient(to right, black, black);
+  background-blend-mode: lighten;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,11 +31,11 @@
 }
 
 .navbar-link-item {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 15px;
   cursor: pointer;
   border-radius: 5px;
-  color: #fff;
+  color: black;
   padding: 3px 5px;
   transition: all 0.2s ease-in-out;
 }
@@ -114,6 +114,7 @@ a {
 .bag-container {
   width: 65px;
   display: flex;
+  color: black;
   justify-content: space-between;
 }
 
@@ -122,12 +123,12 @@ a {
   width: 22px;
   height: 22px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .icon-heart:hover,
 .icon-plus:hover {
-  color: black;
+  scale: 1.1;
   background-color: transparent;
 }
 
