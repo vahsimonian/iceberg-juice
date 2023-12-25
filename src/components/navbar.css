@@ -8,7 +8,7 @@
   gap: 35px;
   position: fixed;
   background-image: url("../assets/bg-s/bg.jpg"),
-    linear-gradient(to right, black, black);
+    linear-gradient(to right, #f15025, green);
   background-blend-mode: lighten;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,37 +180,33 @@ hr {
 
 @media (max-width: 500px) {
   .nav-link-container {
-    display: none;
     position: absolute;
-    width: 50%;
-    top: 100%;
-    right: 0;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
   }
 
   .hamburger-menu {
     display: block;
   }
 
-  .nav-link-container {
+  .navbar-link-item {
+    padding: 0;
+    line-height: 1px;
+  }
+  .show {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+    position: absolute;
+    margin-top: -25px;
+    background-color: #fff;
+    border-radius: 7.5px;
+    width: 30vw;
+    height: 20vh;
+    z-index: 10;
+    border: 5px solid #f15025;
 
-  .navbar-link-item {
-    padding: 10px;
-    width: 100%;
-    text-align: left;
+    right: 1rem;
+    top: 5rem;
   }
-}
-
-.show {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  background-color: red;
-  z-index: 10;
 }

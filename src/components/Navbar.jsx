@@ -34,12 +34,12 @@ function Navbar() {
   return (
     <nav id="navbar">
       <div className="bag-container">
-        {hasFavorites() ? ( // Call as a function
+        {hasFavorites() ? (
           <BsBagHeartFill className="icon-heart" />
         ) : (
           <BsBagHeart className="icon-heart" />
         )}
-        {hasCartItems() ? ( // Call as a function
+        {hasCartItems() ? (
           <BsBagPlusFill className="icon-plus" />
         ) : (
           <BsBagPlus className="icon-plus" />
@@ -60,7 +60,7 @@ function Navbar() {
           alt="search"
         />
       </form>
-      <div className="hamburger-menu" onClick={toggleMenu}>
+      <div className={`hamburger-menu`} onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>
@@ -68,7 +68,7 @@ function Navbar() {
       <div className={`nav-link-container ${menuOpen ? "show" : ""}`}>
         {navbarItems.map((item, index) => (
           <Link
-            className={`navbar-link-item navbar-link-item-container ${
+            className={`navbar-link-item ${
               index === 0 || index === 3 ? "home-link" : ""
             }`}
             activeClass="active"
@@ -84,7 +84,15 @@ function Navbar() {
           >
             {item.name}
             {item.name !== "Home" && item.name !== "Contact" && (
-              <img src={whiteArrowDown} alt="arrow-down" width={13} />
+              <img
+                src={whiteArrowDown}
+                alt="arrow-down"
+                width={12.5}
+                style={{
+                  backgroundColor: "black",
+                  borderRadius: "15px",
+                }}
+              />
             )}
             {hoveredItem === index && item.listItems && (
               <div className="hover-div">
@@ -96,7 +104,6 @@ function Navbar() {
               </div>
             )}
           </Link>
-          // </div>
         ))}
       </div>
     </nav>
