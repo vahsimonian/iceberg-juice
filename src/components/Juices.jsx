@@ -52,7 +52,12 @@ function Juices() {
             <AiOutlineHeart style={{ color: "red" }} />
           )}
         </div>
-        <div className="color-overlay" style={{ backgroundColor: juice.color }}>
+        <div
+          className="color-overlay"
+          style={{
+            background: `linear-gradient(to top, ${juice.color} ,white )`,
+          }}
+        >
           <div className="info-icon" onClick={handleSearch}>
             <IoInformationCircleOutline />
           </div>
