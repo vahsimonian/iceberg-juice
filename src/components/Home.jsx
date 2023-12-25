@@ -6,7 +6,7 @@ function Home() {
     <div id="home">
       <div className="special-offers-container">
         <div className="special-offer">
-          <h2 className="special-offer-h2">Refreshing Summer Bonanza: </h2>
+          <h2 className="special-offer-h2">Refreshing Summer Bonanza </h2>
           <p className="special-offer-p">
             As the mercury rises, cool off with our 'Summer Splash' collection –
             a vibrant assortment of tropical flavors at a 20% discount. From the
@@ -16,7 +16,7 @@ function Home() {
         </div>
         <div className="special-offer">
           <hr id="hr" />
-          <h2 className="special-offer-h2">First-Time Buyer Special: </h2>
+          <h2 className="special-offer-h2">First-Time Buyer Special </h2>
           <p className="special-offer-p">
             New to Iceberg Kampot? We welcome you with open arms and a special
             15% discount on your first purchase. Use code "ICEBERGNEW" at
@@ -25,7 +25,7 @@ function Home() {
         </div>
         <div className="special-offer">
           <hr id="hr" />
-          <h2 className="special-offer-h2">Loyalty Rewarded: </h2>
+          <h2 className="special-offer-h2">Loyalty Rewarded </h2>
           <p className="special-offer-p">
             Our repeat customers are the pillars of our success. Enjoy a 'Buy 5,
             Get 1 Free' offer on all our juice ranges. It's our way of saying
@@ -34,7 +34,7 @@ function Home() {
         </div>
         <div className="special-offer">
           <hr id="hr" />
-          <h2 className="special-offer-h2">Family Pack Fiesta: </h2>
+          <h2 className="special-offer-h2">Family Pack Fiesta </h2>
           <p className="special-offer-p">
             Embrace healthy living for the whole family with our Family Pack
             Fiesta. Purchase any family pack and receive a complimentary set of
@@ -44,7 +44,7 @@ function Home() {
         </div>
         <div className="special-offer">
           <hr id="hr" />
-          <h2 className="special-offer-h2">Referral Rewards: </h2>
+          <h2 className="special-offer-h2">Referral Rewards </h2>
           <p className="special-offer-p">
             Spread the joy of health! Refer a friend and both of you can enjoy a
             10% discount on your next purchase. It's a win-win for health and

@@ -26,60 +26,78 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid magenta; */
-  padding: 5px 10px;
+  padding: 0 10px;
+  margin-top: 30px;
+  overflow: scroll;
+  margin-right: 12.5px;
+  max-height: 225px;
 }
 
 .juice-desc {
-  border-radius: 5px;
   font-family: "Comme", cursive;
-  color: green;
+  color: rgb(43, 82, 7);
   font-size: 0.9rem;
-  padding-top: 5px;
+  padding: 0 10px;
 }
 
-.hr {
-  width: 90%;
-  height: 1px;
-  background-color: grey;
-  margin-block: 15px;
+.desc-container::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+.desc-container::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 192, 89, 0.5);
+  border-radius: 15px;
+}
+
+.desc-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.658);
 }
 
 .home-title {
   font-family: "Comme", cursive;
-  color: green;
   padding-bottom: 5px;
-  font-size: 1rem;
-}
-
-.free-div {
-  /* border: 1px solid magenta; */
+  margin-left: 10px;
+  color: rgb(129, 186, 76);
+  font-size: 1.1rem;
 }
 
 .special-offers-container {
-  /* border: 1px solid magenta; */
-  /* height: 120%; */
-  padding: 5px 15px;
+  overflow: scroll;
+  margin-top: 30px;
+}
+
+.special-offers-container::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+.special-offers-container::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 192, 89, 0.5);
+  border-radius: 15px;
+}
+
+.special-offers-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.658);
 }
 
 .special-offers-container #hr {
   background-color: rgb(147, 165, 101);
   width: 90%;
   height: 1px;
-  background-color: grey;
-  margin-block: 15px;
-}
-
-.special-offer {
-  border: 1px solid magenta;
+  background-color: rgba(139, 192, 89, 0.5);
+  margin-block: 7.5px;
 }
 
 .special-offer-h2 {
+  color: rgb(52, 90, 17);
   font-size: 1.2rem;
   font-family: "Comme", cursive;
+  margin-left: 15px;
 }
 .special-offer-p {
   font-size: 0.9rem;
   font-family: "Comme", cursive;
-  color: black;
+  color: rgb(8, 128, 32);
+  padding: 5px 15px;
 }
