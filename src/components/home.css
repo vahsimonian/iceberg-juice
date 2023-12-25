@@ -101,3 +101,15 @@
   color: rgb(5, 108, 26);
   padding: 5px 15px;
 }
+
+@media screen and (max-width: 500px) {
+  .desc-container {
+    width: 158px;
+  }
+  #home {
+    display: grid;
+    grid-template-columns: 50% 5% 40%;
+
+    grid-template-rows: 40% 37.5% 21.5%;
+  }
+}

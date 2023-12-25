@@ -5,16 +5,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-block: 100px;
   background-image: url("../assets/bg-s/juices-bg4.png"),
     linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73));
   background-blend-mode: lighten;
 }
+
 .fruit-container {
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
-  width: 90vw;
+  width: 90vw; */
 }
 
 .juice-item-container {
@@ -48,10 +48,10 @@
 }
 
 .juice-item {
-  width: 20vw;
-  height: 40vh;
+  width: 200px;
+  height: 300px;
   font-size: 7.5px;
-  margin-inline-start: 25px;
+  margin-inline-start: 10px;
   border-radius: 7.5px;
   color: #000;
   background-image: url("../assets/bg-s/home-item.png");
@@ -140,6 +140,7 @@
   color: white;
   overflow: hidden;
   font-family: "Comme", cursive;
+  font-size: 0.7rem;
 }
 
 .juice-p {
@@ -149,11 +150,11 @@
   left: 0;
   border-radius: 0 100% 0 0;
   font-size: 0.6rem;
+  margin-top: 0;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .juice-p p {
-  margin-top: 0;
-  font-family: "Space Grotesk", sans-serif;
   padding: 2px 5px;
   color: white;
   font-weight: 100;
@@ -173,4 +174,42 @@
   margin-top: 2px;
   width: 100%;
   border-top: 1px solid #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .juice-item {
+    width: 140px;
+    height: 200px;
+  }
+  .juice-item h2 {
+    font-size: 0.5rem;
+  }
+  .juice-p {
+    font-size: 0.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #juices {
+    padding-block: 20px;
+    margin-inline: 2.5px;
+  }
+  .juice-item {
+    width: 90px;
+    height: 140px;
+  }
+  .juice-item h2 {
+    font-size: 0.4rem;
+  }
+  .juice-p {
+    font-size: 0.3rem;
+  }
+  .juice-item-container {
+    width: 100vw;
+    padding: 10px 0;
+    margin-inline: 0;
+  }
+  #juice-title {
+    font-size: 0.2rem;
+    padding: 1px 5px;
+  }
 }
