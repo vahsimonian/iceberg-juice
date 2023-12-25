@@ -5,8 +5,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
-  padding-bottom: 7.5px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-image: url("../assets/bg-s/juices-bg4.png"),
     linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73));
   background-blend-mode: lighten;
@@ -106,7 +106,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 39%;
   height: 100%;
   background-color: white;
   border-radius: 5px 0 0 5px;
@@ -123,15 +123,14 @@
   margin-block: 12.5px;
   max-width: 15vw;
   max-width: 60%;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   left: 10px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 .juice-item img:hover {
-  scale: 1.5;
-  transform: rotate(360deg);
+  scale: 1.1;
 }
 
 .juice-item h2 {
@@ -152,25 +151,30 @@
   bottom: 0;
   left: 0;
   border-radius: 0 100% 0 0;
+  font-size: 0.6rem;
 }
 
 .juice-p p {
   margin-top: 0;
   font-family: "Space Grotesk", sans-serif;
   padding: 2px 5px;
-  font-size: 6px;
+  color: black;
+}
+
+#juice-title {
   color: white;
+  background-color: black;
 }
 
 .hr-price {
-  width: 20px;
-  border: 1px solid #fff;
+  /* width: 100%;
+  border: 1px solid #fff; */
 }
 .hr-fruits {
-  width: 40px;
+  width: 100%;
   border: 1px solid #fff;
 }
 .hr-desc {
-  width: 60px;
+  width: 100%;
   border: 1px solid #fff;
 }

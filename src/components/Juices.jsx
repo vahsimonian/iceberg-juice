@@ -33,7 +33,7 @@ function Juices() {
         style={{ backgroundColor: "white" }}
         key={juice.id}
       >
-        <h2 style={{ backgroundColor: "darkblue" }}>{juice.title}</h2>
+        <h2 id="juice-title">{juice.title}</h2>
         <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div onClick={() => toggleFilledInShop(juice.id)} className={iconClass}>
           {isFilled ? (
