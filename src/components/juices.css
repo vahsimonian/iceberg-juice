@@ -68,28 +68,26 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   cursor: pointer;
-  right: 1.5px;
-  bottom: 0;
+  right: 2px;
   font-size: 15px;
+  bottom: 2px;
   position: absolute;
 }
 
 .favorite-icon {
   transition: all 0.5s ease-in-out;
-  bottom: 0;
-  right: 17.5px;
+  bottom: 4px;
+  right: 20px;
   opacity: 0;
   cursor: pointer;
   position: absolute;
-  font-size: 15px;
 }
 
 .info-icon {
   position: absolute;
   top: 4px;
   left: 4px;
-  font-size: 15px;
-  color: white;
+  color: black;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }

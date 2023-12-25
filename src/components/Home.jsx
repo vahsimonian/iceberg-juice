@@ -67,6 +67,7 @@ function Home() {
           doorstep.
         </p>
       </div>
+      <div></div>
       <div className="image-container"></div>
     </div>
   );

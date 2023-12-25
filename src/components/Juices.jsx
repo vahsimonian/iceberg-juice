@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import "./juices.css";
 import { juiceData } from "../juiceData";
-// import {  fourJuicesCircled } from "../juiceData";
 import { RiShoppingCartFill, RiShoppingCartLine } from "react-icons/ri";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { JuiceContext } from "../JuiceContext";
-// import blackWhiteBg from "../assets/bg-s/black-white-bg.png";
 
 function Juices() {
   const { favorites, filledInShop, toggleFavorite, toggleFilledInShop } =
@@ -37,9 +35,9 @@ function Juices() {
         <img src={juice.img} alt="juice" onClick={handleSearch} />
         <div onClick={() => toggleFilledInShop(juice.id)} className={iconClass}>
           {isFilled ? (
-            <RiShoppingCartFill style={{ color: "black" }} />
+            <RiShoppingCartFill style={{ color: "black" }} size={16} />
           ) : (
-            <RiShoppingCartLine style={{ color: "black" }} />
+            <RiShoppingCartLine style={{ color: "black" }} size={16} />
           )}
         </div>
         <div
@@ -47,19 +45,29 @@ function Juices() {
           className={favoriteIconClass}
         >
           {isFavorite ? (
-            <AiFillHeart style={{ color: "red" }} />
+            <AiFillHeart
+              style={{
+                color: "red",
+              }}
+              size={16}
+            />
           ) : (
-            <AiOutlineHeart style={{ color: "red" }} />
+            <AiOutlineHeart
+              style={{
+                color: "red",
+              }}
+              size={16}
+            />
           )}
         </div>
         <div
           className="color-overlay"
           style={{
-            background: `linear-gradient(to top, ${juice.color} ,white )`,
+            background: `linear-gradient(to top, ${juice.color} 40%, white)`,
           }}
         >
           <div className="info-icon" onClick={handleSearch}>
-            <IoInformationCircleOutline />
+            <IoInformationCircleOutline size={17.5} />
           </div>
           <div className="juice-p">
             <hr className="hr-price" />
@@ -78,9 +86,6 @@ function Juices() {
     <div id="juices">
       <div className="fruit-container">
         <div className="black-white-bg"></div>
-        {/* {fourJuicesCircled.map((fruit) => (
-        ))} */}
-        {/* <img src={blackWhiteBg} alt="fruit" className="black-white-bg" /> */}
       </div>
       <div className="juice-item-container">{juiceItem}</div>
     </div>
