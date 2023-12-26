@@ -45,6 +45,7 @@
   color: black;
   border-radius: 5px 5px 5px 0;
 }
+
 .search {
   padding: 5px;
   width: 40px;
@@ -101,6 +102,7 @@ a {
 .navbar-link-item-container:hover .hover-div {
   display: block;
 }
+
 .home-link:hover .hover-div {
   display: none;
 }
@@ -178,7 +180,7 @@ hr {
   margin: 6px 0;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .nav-link-container {
     position: absolute;
     padding: 10px;
@@ -220,6 +222,7 @@ hr {
 
     border-radius: 5px 5px 5px 0;
   }
+
   /* Define the keyframes for the moving background */
   @keyframes moveBackground {
     0% {

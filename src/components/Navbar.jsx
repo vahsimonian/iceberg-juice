@@ -67,33 +67,38 @@ function Navbar() {
       </div>
       <div className={`nav-link-container ${menuOpen ? "show" : ""}`}>
         {navbarItems.map((item, index) => (
-          <Link
-            className={`navbar-link-item ${
+          <div
+            className={`navbar-link-item-container ${
               index === 0 || index === 3 ? "home-link" : ""
             }`}
-            activeClass="active"
-            to={item.to}
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            classID="nav-link-item"
             onMouseEnter={() => setHoveredItem(index)}
             onMouseLeave={() => setHoveredItem(null)}
             key={item.id}
           >
-            {item.name}
-            {item.name !== "Home" && item.name !== "Contact" && (
-              <img
-                src={whiteArrowDown}
-                alt="arrow-down"
-                width={12.5}
-                style={{
-                  backgroundColor: "black",
-                  borderRadius: "15px",
-                }}
-              />
-            )}
+            <Link
+              className="navbar-link-item"
+              activeClass="active"
+              to={item.to}
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              // classID="nav-link-item"
+              key={item.id}
+            >
+              {item.name}
+              {item.name !== "Home" && item.name !== "Contact" && (
+                <img
+                  src={whiteArrowDown}
+                  alt="arrow-down"
+                  width={12.5}
+                  style={{
+                    backgroundColor: "black",
+                    borderRadius: "15px",
+                  }}
+                />
+              )}
+            </Link>
             {hoveredItem === index && item.listItems && (
               <div className="hover-div">
                 {item.listItems.map((subItem, subIndex) => (
@@ -103,7 +108,7 @@ function Navbar() {
                 ))}
               </div>
             )}
-          </Link>
+          </div>
         ))}
       </div>
     </nav>
