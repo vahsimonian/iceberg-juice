@@ -180,6 +180,47 @@ hr {
   margin: 6px 0;
 }
 
+.nav-link-container {
+  display: flex;
+  flex-direction: column; /* Stack link items vertically */
+  gap: 0.5rem; /* Add a little space between each link item */
+}
+
+/* Style for the link item container */
+.navbar-link-item-container {
+  position: relative; /* Anchor for the absolute positioning of hover-div */
+}
+
+/* Style for the dropdown on hover */
+.hover-div {
+  display: none; /* Hide the dropdown initially */
+  position: absolute; /* Position it absolutely relative to its parent */
+  top: 100%; /* Directly below the link item */
+  left: 0;
+  background-color: lightgray;
+  border-radius: 0 0 5px 5px; /* Rounded corners on the bottom */
+  z-index: 100; /* Ensure it stacks on top of other content */
+  white-space: nowrap; /* Prevents wrapping of list items */
+}
+
+/* Show the dropdown on hover of the link item container */
+.navbar-link-item-container:hover .hover-div {
+  display: block; /* Show the dropdown */
+}
+
+/* Style for individual list items in the dropdown */
+.list-item {
+  color: white;
+  font-size: 12.5px;
+  padding: 5px 10px; /* Add padding for clickable area */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change background of list item on hover */
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
+}
+
 @media screen and (max-width: 500px) {
   .nav-link-container {
     position: absolute;
