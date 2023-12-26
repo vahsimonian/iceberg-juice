@@ -214,10 +214,22 @@ hr {
     right: 1rem;
     top: 5rem;
   }
+  .navbar-link-item:hover {
+    background-color: transparent;
+    scale: 1.1;
+
+    border-radius: 5px 5px 5px 0;
+  }
   /* Define the keyframes for the moving background */
   @keyframes moveBackground {
     0% {
       background-position: 0% 0%;
+    }
+    25% {
+      background-position: 25%;
+    }
+    50% {
+      background-position: 0% 50%;
     }
     100% {
       background-position: 100% 0%;
@@ -230,7 +242,7 @@ hr {
 
     /* Add your background image and make it repeat */
     background-image: url("../assets/bg-s/link\ items\ bg.png");
-    background-repeat: repeat-x; /* Repeat horizontally */
+    background-repeat: repeat-y; /* Repeat horizontally */
 
     /* Apply the animation */
     animation: moveBackground 10s linear infinite; /* Adjust time as needed */
