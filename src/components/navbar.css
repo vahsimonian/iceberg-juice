@@ -182,7 +182,7 @@ hr {
 
 .nav-link-container {
   display: flex;
-  flex-direction: column; /* Stack link items vertically */
+  flex-direction: row; /* Stack link items vertically */
   gap: 0.5rem; /* Add a little space between each link item */
 }
 
@@ -278,11 +278,6 @@ hr {
     100% {
       background-position: 100% 0%;
     }
-  }
-
-  #nav-link-container {
-    display: flex;
-    flex-direction: column;
   }
 
   /* Apply the animation to your nav-link-container */
