@@ -16,9 +16,9 @@
   z-index: 10;
 }
 
-.nav-link-container {
+#nav-link-container {
   display: flex;
-  gap: 35px;
+  flex-direction: row;
 }
 
 .juice-icon {
@@ -221,7 +221,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .nav-link-container {
     position: absolute;
     padding: 10px;
@@ -278,6 +278,11 @@ hr {
     100% {
       background-position: 100% 0%;
     }
+  }
+
+  #nav-link-container {
+    display: flex;
+    flex-direction: column;
   }
 
   /* Apply the animation to your nav-link-container */

@@ -65,7 +65,10 @@ function Navbar() {
         <div></div>
         <div></div>
       </div>
-      <div className={`nav-link-container ${menuOpen ? "show" : ""}`}>
+      <div
+        id="nav-link-container"
+        className={`nav-link-container ${menuOpen ? "show" : ""}`}
+      >
         {navbarItems.map((item, index) => (
           <div
             className={`navbar-link-item-container ${
