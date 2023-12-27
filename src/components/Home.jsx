@@ -1,5 +1,23 @@
 import "./home.css";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+
+import win1 from "../assets/competition/1.png";
+import win2 from "../assets/competition/2.png";
+import win3 from "../assets/competition/3.png";
+import win4 from "../assets/competition/4.png";
+import win5 from "../assets/competition/5.png";
+import win6 from "../assets/competition/6.png";
+import win7 from "../assets/competition/7.png";
+import win8 from "../assets/competition/8.png";
+import win9 from "../assets/competition/9.png";
 
 function Home() {
   return (
@@ -68,7 +86,39 @@ function Home() {
         </p>
       </div>
       <div></div>
-      <div className="image-container"></div>
+      <div className="image-container">
+        <h1 className="competition-gallery-heading">Competition Gallery</h1>
+        <Swiper>
+          <SwiperSlide>
+            <img src={win1} alt="win1" width={50} />
+          </SwiperSlide>
+          <br /> <br />
+          <SwiperSlide>
+            <img src={win2} alt="win2" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win3} alt="win3" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win4} alt="win4" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win5} alt="win5" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win6} alt="win6" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win7} alt="win7" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win8} alt="win8" width={50} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={win9} alt="win9" width={50} />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 }
