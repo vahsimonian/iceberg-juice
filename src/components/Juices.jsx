@@ -84,9 +84,9 @@ function Juices() {
 
   return (
     <div id="juices">
-      <div className="fruit-container">
+      {/* <div className="fruit-container">
         <div className="black-white-bg"></div>
-      </div>
+      </div> */}
       <div className="juice-item-container">{juiceItem}</div>
     </div>
   );

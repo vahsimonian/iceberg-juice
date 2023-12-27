@@ -11,12 +11,6 @@
   background-blend-mode: lighten;
 }
 
-.fruit-container {
-  /* display: flex;
-  justify-content: space-evenly;
-  width: 90vw; */
-}
-
 .juice-item-container {
   background-position: center;
   background-repeat: no-repeat;
@@ -26,11 +20,11 @@
   margin-inline: 3vw;
   gap: 15px;
   height: 75vh;
-  width: 70vw;
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
-  max-width: 70vw;
+  width: 80vw;
+  max-width: 80vw;
 }
 
 .juice-item-container::-webkit-scrollbar {
@@ -192,10 +186,11 @@
   #juices {
     padding-block: 20px;
     margin-inline: 2.5px;
+    height: 60vh;
   }
   .juice-item {
-    width: 90px;
-    height: 140px;
+    width: 110px;
+    height: 160px;
   }
   .juice-item h2 {
     font-size: 0.4rem;
@@ -204,9 +199,11 @@
     font-size: 0.225rem;
   }
   .juice-item-container {
-    width: 100vw;
     padding: 10px 0;
     margin-inline: 0;
+    gap: 5px;
+    width: 95vw;
+    max-width: 95vw;
   }
   #juice-title {
     font-size: 0.2rem;
