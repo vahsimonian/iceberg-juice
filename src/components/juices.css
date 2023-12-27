@@ -188,7 +188,7 @@
     font-size: 0.4rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   #juices {
     padding-block: 20px;
     margin-inline: 2.5px;
@@ -201,7 +201,7 @@
     font-size: 0.4rem;
   }
   .juice-p {
-    font-size: 0.3rem;
+    font-size: 0.225rem;
   }
   .juice-item-container {
     width: 100vw;
