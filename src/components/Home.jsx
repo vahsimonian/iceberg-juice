@@ -1,23 +1,5 @@
 import "./home.css";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-
-import win1 from "../assets/competition/1.png";
-import win2 from "../assets/competition/2.png";
-import win3 from "../assets/competition/3.png";
-import win4 from "../assets/competition/4.png";
-import win5 from "../assets/competition/5.png";
-import win6 from "../assets/competition/6.png";
-import win7 from "../assets/competition/7.png";
-import win8 from "../assets/competition/8.png";
-import win9 from "../assets/competition/9.png";
 
 function Home() {
   return (
@@ -86,68 +68,7 @@ function Home() {
         </p>
       </div>
       <div></div>
-      <div className="image-container">
-        <h1 className="competition-gallery-heading">Competition Gallery</h1>
-        <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2.5,
-          }}
-          pagination={{ el: ".swiper-pagination", clickable: true }}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            clickable: true,
-          }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
-          className="swiper_container"
-        >
-          <SwiperSlide>
-            <img src={win1} alt="win1" width={100} />
-          </SwiperSlide>
-          <br /> <br />
-          <SwiperSlide>
-            <img src={win2} alt="win2" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win3} alt="win3" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win4} alt="win4" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win5} alt="win5" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win6} alt="win6" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win7} alt="win7" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win8} alt="win8" width={100} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={win9} alt="win9" width={50} />
-          </SwiperSlide>
-          <div className="slider-controler">
-            <div className="slider-arrow">
-              <div name="arrow-back-outline"></div>
-            </div>
-            <div className="swiper-button-next slider-arrow">
-              <div name="arrow-forward-outline">swipe ape</div>
-            </div>
-            <div className="swiper-pagination"></div>
-          </div>
-        </Swiper>
-      </div>
+      <div className="image-container"></div>
     </div>
   );
 }
