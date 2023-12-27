@@ -12,6 +12,9 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 #home > * {
   margin-inline-start: 10px;
@@ -19,7 +22,7 @@
 
 .image-container {
   grid-column: 1 / -1;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 }
 
 .desc-container {
@@ -149,4 +152,7 @@
 
 .read-the-docs {
   color: #888;
+}
+.competition-gallery-heading {
+  font-size: 1rem;
 }
