@@ -16,7 +16,9 @@ function Home() {
     <div id="home">
       <div className="special-offers-container">
         <div className="special-offer">
-          <h2 className="special-offer-h2">Refreshing Summer Bonanza </h2>
+          <h2 className="special-offer-h2">
+            <span> Refreshing</span> Summer Bonanza{" "}
+          </h2>
           <p className="special-offer-p">
             As the mercury rises, cool off with our 'Summer Splash' collection –
             a vibrant assortment of tropical flavors at a 20% discount. From the
@@ -77,17 +79,64 @@ function Home() {
           doorstep.
         </p>
       </div>
-      <div></div>
+      <div>
+        <h1 className="competition-gallery-title">Competition Gallery</h1>
+      </div>
       <div className="image-container">
-        <img src={competitionImage1} alt="1" width={120} />
-        <img src={competitionImage2} alt="2" width={120} />
-        <img src={competitionImage3} alt="3" width={120} />
-        <img src={competitionImage4} alt="4" width={120} />
-        <img src={competitionImage5} alt="5" width={120} />
-        <img src={competitionImage6} alt="6" width={120} />
-        <img src={competitionImage7} alt="7" width={120} />
-        <img src={competitionImage8} alt="8" width={120} />
-        <img src={competitionImage9} alt="9" width={120} />
+        <img
+          className="competition-img"
+          src={competitionImage1}
+          alt="1"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage2}
+          alt="2"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage3}
+          alt="3"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage4}
+          alt="4"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage5}
+          alt="5"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage6}
+          alt="6"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage7}
+          alt="7"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage8}
+          alt="8"
+          width={120}
+        />
+        <img
+          className="competition-img"
+          src={competitionImage9}
+          alt="9"
+          width={120}
+        />
       </div>
     </div>
   );

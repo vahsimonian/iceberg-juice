@@ -57,7 +57,7 @@
   font-family: "Comme", cursive;
   padding-bottom: 5px;
   margin-left: 10px;
-  color: rgb(27, 46, 9);
+  color: rgb(167, 76, 206);
   font-size: 1.1rem;
 }
 
@@ -90,11 +90,16 @@
 }
 
 .special-offer-h2 {
-  color: rgb(37, 63, 11);
+  color: rgb(190, 87, 118);
   font-size: 1.2rem;
   font-family: "Comme", cursive;
   margin-left: 15px;
 }
+
+.special-offer-h2 span {
+  color: rgb(238, 186, 42);
+}
+
 .special-offer-p {
   font-size: 0.9rem;
   font-family: "Comme", cursive;
@@ -109,22 +114,41 @@
   overflow-y: hidden;
 }
 
-.image-container > img {
+.image-container::-webkit-scrollbar {
+  height: 6px;
+  background: rgb(142, 171, 37);
+}
+.image-container::-webkit-scrollbar-thumb {
+  background: rgb(114, 141, 15);
+  border-radius: 5px;
+}
+
+.competition-gallery-title {
+  font-family: "Jost", sans-serif;
+  color: rgba(197, 174, 57, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  margin-inline-start: 2vw;
+  align-items: flex-end;
+  height: 102%;
+  width: 100%;
+}
+
+.competition-img {
   padding: 5px;
-  background-color: rgb(114, 141, 15);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(207, 207, 97),
+    rgb(169, 201, 75),
+    rgb(139, 192, 89),
+    rgb(155, 197, 57)
+  );
   border-radius: 10px;
   flex: 0 0 auto;
   margin: 2px 10px;
   max-width: 120px;
   height: auto;
-}
-
-.image-container::-webkit-scrollbar {
-  height: 10px;
-}
-.image-container::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 5px;
+  border-color: aqua;
 }
 
 @media screen and (max-width: 1000px) {
@@ -134,8 +158,28 @@
 }
 
 @media screen and (max-width: 500px) {
+  .home-title {
+    font-size: 0.8rem;
+  }
+
+  .juice-desc {
+    font-size: 0.775rem;
+  }
+
   .image-container img {
     width: 75px;
+  }
+
+  .special-offer-h2 {
+    font-size: 0.8rem;
+  }
+
+  .special-offer {
+    width: 45vw;
+  }
+
+  .special-offer-p {
+    font-size: 0.775rem;
   }
 
   .desc-container {
