@@ -1,9 +1,5 @@
 import "./home.css";
 import React from "react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-// Import Swiper core and required modules
 
 import competitionImage1 from "../assets/competition/1.png";
 import competitionImage2 from "../assets/competition/2.png";
@@ -14,9 +10,6 @@ import competitionImage6 from "../assets/competition/6.png";
 import competitionImage7 from "../assets/competition/7.png";
 import competitionImage8 from "../assets/competition/8.png";
 import competitionImage9 from "../assets/competition/9.png";
-
-import { register } from "swiper/element/bundle";
-register();
 
 function Home() {
   return (
@@ -85,45 +78,7 @@ function Home() {
         </p>
       </div>
       <div></div>
-      <div className="image-container">
-        <swiper-container
-          slides-per-view="9"
-          speed="500"
-          loop="true"
-          css-mode="true"
-          controller-control=".swiper-9"
-          navigation="true"
-          pagination="true"
-        >
-          <swiper-slide>
-            <img src={competitionImage1} alt="1" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage2} alt="2" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage3} alt="3" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage4} alt="4" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage5} alt="5" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage6} alt="6" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage7} alt="7" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage8} alt="8" className="swiper-img" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={competitionImage9} alt="9" className="swiper-img" />
-          </swiper-slide>
-        </swiper-container>
-      </div>
+      <div className="image-container"></div>
     </div>
   );
 }
