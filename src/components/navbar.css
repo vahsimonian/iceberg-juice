@@ -238,6 +238,7 @@ hr {
     margin-block: -2px;
     color: #fff;
     padding-inline-start: 1px 2px;
+    letter-spacing: 2.5px;
   }
   .show {
     display: flex;
@@ -290,5 +291,15 @@ hr {
 
     /* Apply the animation */
     animation: moveBackground 10s linear infinite; /* Adjust time as needed */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-link-item {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+  .navbar-link-item-container {
+    height: 20px;
   }
 }
