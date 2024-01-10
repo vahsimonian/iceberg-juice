@@ -1,15 +1,15 @@
-import "./home.css";
-import React from "react";
+import './home.css';
+import React from 'react';
 
-import competitionImage1 from "../assets/competition/1.png";
-import competitionImage2 from "../assets/competition/2.png";
-import competitionImage3 from "../assets/competition/3.png";
-import competitionImage4 from "../assets/competition/4.png";
-import competitionImage5 from "../assets/competition/5.png";
-import competitionImage6 from "../assets/competition/6.png";
-import competitionImage7 from "../assets/competition/7.png";
-import competitionImage8 from "../assets/competition/8.png";
-import competitionImage9 from "../assets/competition/9.png";
+import competitionImage1 from '../assets/competition/1.png';
+import competitionImage2 from '../assets/competition/2.png';
+import competitionImage3 from '../assets/competition/3.png';
+import competitionImage4 from '../assets/competition/4.png';
+import competitionImage5 from '../assets/competition/5.png';
+import competitionImage6 from '../assets/competition/6.png';
+import competitionImage7 from '../assets/competition/7.png';
+import competitionImage8 from '../assets/competition/8.png';
+import competitionImage9 from '../assets/competition/9.png';
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
       <div className="special-offers-container">
         <div className="special-offer">
           <h2 className="special-offer-h2">
-            <span> Refreshing</span> Summer Bonanza{" "}
+            <span> Refreshing</span> Summer Bonanza{' '}
           </h2>
           <p className="special-offer-p">
             As the mercury rises, cool off with our 'Summer Splash' collection –
@@ -87,55 +87,55 @@ function Home() {
           className="competition-img"
           src={competitionImage1}
           alt="1"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage2}
           alt="2"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage3}
           alt="3"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage4}
           alt="4"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage5}
           alt="5"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage6}
           alt="6"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage7}
           alt="7"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage8}
           alt="8"
-          width={120}
+          width={100}
         />
         <img
           className="competition-img"
           src={competitionImage9}
           alt="9"
-          width={120}
+          width={100}
         />
       </div>
     </div>
