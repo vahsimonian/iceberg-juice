@@ -1,11 +1,11 @@
-import "./App.css";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Home from "./components/Home";
-import Juices from "./components/Juices";
-import Navbar from "./components/Navbar";
+import './App.css';
+import Contact from './Contact';
+import Footer from './Footer';
+import Home from './components/Home';
+import Juices from './components/Juices';
+import Navbar from './components/Navbar';
 // import Search from "./components/Search";
-import { JuiceProvider } from "./JuiceContext";
+import { JuiceProvider } from './JuiceContext';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <JuiceProvider>
         <Navbar />
         <Home />
-        <Juices />
+        {/* <Juices /> */}
         {/* <Search /> */}
         <Contact />
         <Footer />

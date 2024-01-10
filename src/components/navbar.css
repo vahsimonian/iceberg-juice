@@ -281,16 +281,11 @@ hr {
     }
   }
 
-  /* Apply the animation to your nav-link-container */
   .nav-link-container {
-    /* ... other styles ... */
-
-    /* Add your background image and make it repeat */
     background-image: url("../assets/bg-s/link\ items\ bg.png");
-    background-repeat: repeat-y; /* Repeat horizontally */
+    background-repeat: repeat-y;
 
-    /* Apply the animation */
-    animation: moveBackground 10s linear infinite; /* Adjust time as needed */
+    animation: moveBackground 10s linear infinite;
   }
 }
 
