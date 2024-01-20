@@ -13,7 +13,7 @@ function App() {
       <JuiceProvider>
         <Navbar />
         <Home />
-        {/* <Juices /> */}
+        <Juices />
         {/* <Search /> */}
         <Contact />
         <Footer />
