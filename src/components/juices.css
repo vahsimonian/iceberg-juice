@@ -55,7 +55,7 @@
   border: 2px solid #fff;
   z-index: 1;
   position: relative;
-  box-shadow: 0 0 7px 1px rgb(255, 255, 255, 0.8);
+  box-shadow: 0 0 7px 1px rgb(0, 0, 0, 0.8);
 }
 
 .shopping-cart-icon {
@@ -98,7 +98,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 39%;
+  width: 70%;
   height: 100%;
   border-radius: 5px 0 0 5px;
   border-right: 2px solid white;
@@ -108,14 +108,14 @@
 .juice-item img {
   z-index: 5;
   position: absolute;
-  top: 25px;
+  top: 15px;
   border: 2px solid #fff;
   border-radius: 50%;
   margin-block: 12.5px;
   max-width: 15vw;
   max-width: 60%;
   transition: all 0.3s ease-in-out;
-  left: 10px;
+  left: 5px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -143,7 +143,7 @@
   bottom: 0;
   left: 0;
   border-radius: 0 100% 0 0;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   margin-top: 0;
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -151,11 +151,11 @@
 .juice-p p {
   padding: 2px 5px;
   color: white;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 #juice-title {
-  color: white;
+  color: white !important;
   background-color: black;
 }
 
@@ -185,28 +185,29 @@
 @media screen and (max-width: 550px) {
   #juices {
     padding-block: 20px;
-    margin-inline: 2.5px;
-    height: 60vh;
+    height: 100svh;
   }
   .juice-item {
-    width: 110px;
-    height: 160px;
+    width: 160px;
+    height: 220px;
   }
   .juice-item h2 {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
   .juice-p {
-    font-size: 0.225rem;
+    font-size: 0.6rem;
   }
   .juice-item-container {
     padding: 10px 0;
-    margin-inline: 0;
     gap: 5px;
-    width: 85vw;
-    max-width: 95vw;
+    width: 100%;
+    margin-inline-start: 0;
+    max-width: 100vw;
   }
   #juice-title {
-    font-size: 0.2rem;
     padding: 1px 5px;
+    background-color: #9806f9;
+    background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
+    color: black !important;
   }
 }

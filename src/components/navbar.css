@@ -243,6 +243,7 @@ hr {
     color: #fff;
     padding-inline-start: 1px 2px;
     letter-spacing: 2.5px;
+    margin: 1px;
   }
   .show {
     display: flex;
@@ -287,6 +288,7 @@ hr {
 
   .nav-link-container {
     background-image: url('../assets/bg-s/link\ items\ bg.png');
+    background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
     background-repeat: repeat-y;
 
     animation: moveBackground 10s linear infinite;
@@ -295,10 +297,10 @@ hr {
 
 @media screen and (max-width: 450px) {
   .navbar-link-item {
-    font-size: 0.7rem;
+    font-size: 0.825rem;
     letter-spacing: 1px;
   }
   .navbar-link-item-container {
-    height: 20px;
+    line-height: 15px;
   }
 }

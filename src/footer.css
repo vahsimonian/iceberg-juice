@@ -6,6 +6,7 @@ a {
 
 footer {
   background: #f1b025;
+  background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
   font-family: 'Space Grotesk', sans-serif;
   padding: 20px;
   display: flex;
