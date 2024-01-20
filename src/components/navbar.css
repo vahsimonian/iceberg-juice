@@ -4,10 +4,10 @@
   width: 100%;
   background-color: #808080;
   align-items: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   gap: 35px;
   position: fixed;
-  background-image: url("../assets/bg-s/bg.jpg"),
+  background-image: url('../assets/bg-s/bg.jpg'),
     linear-gradient(to right, #f15025, green);
   background-blend-mode: lighten;
   background-position: center;
@@ -252,7 +252,7 @@ hr {
     height: 170px;
     z-index: 10;
     border: 5px solid orange;
-    background-image: url("../assets/bg-s/link\ items\ bg.png"),
+    background-image: url('../assets/bg-s/link\ items\ bg.png'),
       linear-gradient(to right, black, gray);
     background-blend-mode: difference;
     right: 1rem;
@@ -282,7 +282,7 @@ hr {
   }
 
   .nav-link-container {
-    background-image: url("../assets/bg-s/link\ items\ bg.png");
+    background-image: url('../assets/bg-s/link\ items\ bg.png');
     background-repeat: repeat-y;
 
     animation: moveBackground 10s linear infinite;

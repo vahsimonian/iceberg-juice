@@ -3,9 +3,9 @@
   grid-template-columns: 47.5% 25% 25%;
   grid-template-rows: 40% 37.5% 21.5%;
   grid-gap: 3px;
-  height: 100vh;
+  height: 100svh;
   padding-top: 80px;
-  background-image: url("../assets/bg-s/index-bg.png"),
+  background-image: url('../assets/bg-s/index-bg.png'),
     linear-gradient(to right, rgb(139, 192, 89), rgb(188, 171, 147));
   background-blend-mode: luminosity;
   background-size: cover;
@@ -33,7 +33,7 @@
 }
 
 .juice-desc {
-  font-family: "Comme", cursive;
+  font-family: 'Comme', cursive;
   color: rgb(72, 97, 56);
   font-size: 0.9rem;
   padding: 0 10px;
@@ -54,7 +54,7 @@
 }
 
 .home-title {
-  font-family: "Comme", cursive;
+  font-family: 'Comme', cursive;
   padding-bottom: 5px;
   margin-left: 10px;
   color: rgb(167, 76, 206);
@@ -92,7 +92,7 @@
 .special-offer-h2 {
   color: rgb(190, 87, 118);
   font-size: 1.2rem;
-  font-family: "Comme", cursive;
+  font-family: 'Comme', cursive;
   margin-left: 15px;
 }
 
@@ -102,7 +102,7 @@
 
 .special-offer-p {
   font-size: 0.9rem;
-  font-family: "Comme", cursive;
+  font-family: 'Comme', cursive;
   color: rgb(5, 108, 26);
   padding: 5px 15px;
 }
@@ -124,7 +124,7 @@
 }
 
 .competition-gallery-title {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   color: rgba(197, 174, 57, 0.7);
   display: flex;
   justify-content: flex-start;
