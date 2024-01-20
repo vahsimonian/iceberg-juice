@@ -1,17 +1,17 @@
-import whiteArrowDown from "../assets/icons/white-down-arrow.png";
-import React, { useContext, useState } from "react";
-import "./navbar.css";
-import { Link } from "react-scroll";
-import searchIcon from "../assets/icons/search-2-line.png";
-import juiceIcon from "../assets/icons/juice-icon.png";
-import { navbarItems } from "../juiceData";
-import { JuiceContext } from "../JuiceContext";
+import whiteArrowDown from '../assets/icons/white-down-arrow.png';
+import React, { useContext, useState } from 'react';
+import './navbar.css';
+import { Link } from 'react-scroll';
+import searchIcon from '../assets/icons/search-2-line.png';
+import juiceIcon from '../assets/icons/juice-icon.png';
+import { navbarItems } from '../juiceData';
+import { JuiceContext } from '../JuiceContext';
 import {
   BsBagHeartFill,
   BsBagHeart,
   BsBagPlus,
   BsBagPlusFill,
-} from "react-icons/bs";
+} from 'react-icons/bs';
 
 function Navbar() {
   const { hasFavorites, hasCartItems } = useContext(JuiceContext);
@@ -56,20 +56,21 @@ function Navbar() {
         />
         <img
           src={searchIcon}
-          className={`search ${isFocused ? "search-focused" : ""}`}
+          className={`search ${isFocused ? 'search-focused' : ''}`}
           alt="search"
         />
       </form>
       <div className={`hamburger-menu`} onClick={toggleMenu}>
         <div></div>
-        <div></div>
+        {/* <div></div> */}
+        {/* <div></div> */}
         <div></div>
       </div>
-      <div className={`nav-link-container ${menuOpen ? "show" : ""}`}>
+      <div className={`nav-link-container ${menuOpen ? 'show' : ''}`}>
         {navbarItems.map((item, index) => (
           <div
             className={`navbar-link-item-container ${
-              index === 0 || index === 3 ? "home-link" : ""
+              index === 0 || index === 3 ? 'home-link' : ''
             }`}
             onMouseEnter={() => setHoveredItem(index)}
             onMouseLeave={() => setHoveredItem(null)}
@@ -87,14 +88,14 @@ function Navbar() {
               key={item.id}
             >
               {item.name}
-              {item.name !== "Home" && item.name !== "Contact" && (
+              {item.name !== 'Home' && item.name !== 'Contact' && (
                 <img
                   src={whiteArrowDown}
                   alt="arrow-down"
                   width={12.5}
                   style={{
-                    backgroundColor: "black",
-                    borderRadius: "15px",
+                    backgroundColor: 'black',
+                    borderRadius: '15px',
                   }}
                 />
               )}
@@ -103,7 +104,7 @@ function Navbar() {
               <div className="hover-div">
                 {item.listItems.map((subItem, subIndex) => (
                   <div key={subIndex} className="list-item">
-                    {subItem} <hr />{" "}
+                    {subItem} <hr />{' '}
                   </div>
                 ))}
               </div>
