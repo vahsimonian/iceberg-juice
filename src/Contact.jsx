@@ -1,10 +1,10 @@
-import React from "react";
-import "./contact.css";
-import { RiInstagramFill } from "react-icons/ri";
-import { RxLinkedinLogo } from "react-icons/rx";
-import { GrMail } from "react-icons/gr";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
+import React from 'react';
+import './contact.css';
+import { RiInstagramFill } from 'react-icons/ri';
+import { RxLinkedinLogo } from 'react-icons/rx';
+import { GrMail } from 'react-icons/gr';
+import { FaSquareXTwitter } from 'react-icons/fa6';
+import { CgProfile } from 'react-icons/cg';
 
 function Contact() {
   return (

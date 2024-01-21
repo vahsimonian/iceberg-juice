@@ -7,7 +7,8 @@
   background-size: cover;
   padding-block: 100px;
   background-image: url('../assets/bg-s/juices-bg4.png'),
-    linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73));
+    /* linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73)); */
+      linear-gradient(to right, #0b6d76, rgb(129, 8, 185));
   background-blend-mode: lighten;
 }
 
