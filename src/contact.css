@@ -1,7 +1,6 @@
 #contact {
   height: 110vh;
   width: 100%;
-  background-image: url('../src/assets/bg-s/contacat-bg.png');
   background-image: url('./assets/bg-s/contacat-bg.png'),
     linear-gradient(to right, #9a1cc1, rgb(44, 127, 222));
   background-blend-mode: lighten;
@@ -26,6 +25,7 @@
 }
 @media screen and (max-width: 500px) {
   #contact {
-    background-image: url('../src/assets/bg-s/contacat-bg2.png');
+    background-image: url('../src/assets/bg-s/contacat-bg2.png'),
+      linear-gradient(to right, #9a1cc1, rgb(44, 127, 222));
   }
 }
