@@ -8,12 +8,13 @@
   gap: 35px;
   position: fixed;
   background-image: url('../assets/bg-s/bg.jpg'),
-    linear-gradient(to right, #f15025, green);
+    linear-gradient(to right, #2558f1, rgb(100, 0, 128));
   background-blend-mode: lighten;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
+  cursor: pointer;
 }
 
 #nav-link-container {
@@ -102,7 +103,9 @@ a {
 .navbar-link-item-container:hover .hover-div {
   background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
   display: block;
-  /* color: blueviolet; */
+  padding: 0;
+  margin: 0;
+  top: 15px;
 }
 
 .home-link:hover .hover-div {
