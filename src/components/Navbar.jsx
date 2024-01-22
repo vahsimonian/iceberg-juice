@@ -20,21 +20,25 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
-
-  const closeMenu = () => {
-    if (menuOpen) {
-      setMenuOpen(false);
+    if (window.innerWidth <= 550) {
+      setMenuOpen((prev) => !prev);
     }
   };
+
+  const closeMenu =
+    (() => {
+      if (menuOpen) {
+        setMenuOpen(false);
+      }
+    },
+    [menuOpen]);
 
   useEffect(() => {
     document.body.addEventListener('click', closeMenu);
     return () => {
       document.body.removeEventListener('click', closeMenu);
     };
-  }, []);
+  }, [closeMenu]);
 
   const handleInputFocus = () => {
     setIsFocused(true);
