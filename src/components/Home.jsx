@@ -1,6 +1,5 @@
 import './home.css';
 import React from 'react';
-
 import competitionImage1 from '../assets/competition/1.png';
 import competitionImage2 from '../assets/competition/2.png';
 import competitionImage3 from '../assets/competition/3.png';
