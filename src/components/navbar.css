@@ -8,23 +8,16 @@
   gap: 35px;
   position: fixed;
   background-image: url('../assets/bg-s/bg.jpg'),
-    linear-gradient(to right, #f15025, green);
+    linear-gradient(to right, #25f139, rgb(127, 222, 44));
   background-blend-mode: lighten;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
-  cursor: pointer;
-}
-
-#nav-link-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .juice-icon {
   background-color: rgba(255, 255, 255, 0.8);
-
   border-radius: 50%;
   border: 1px solid black;
   margin: 5px;
@@ -39,12 +32,14 @@
   color: black;
   padding: 3px 5px;
   transition: all 0.2s ease-in-out;
+  /* border: 1px solid transparent; */
 }
 
 .navbar-link-item:hover {
-  background-color: #fff;
+  border: 1px solid white;
   color: black;
   border-radius: 5px 5px 5px 0;
+  padding: 5px;
 }
 
 .search {
@@ -137,21 +132,6 @@ a {
   background-color: transparent;
 }
 
-.hover-div {
-  display: none;
-  position: absolute;
-  max-width: 100px;
-  max-height: 150px;
-  background-color: lightgray;
-  border-radius: 0 5px 5px 5px;
-  border: 2px solid #fff;
-  z-index: 10;
-  top: 50px;
-  margin-left: -5.2px;
-  padding: 5px 5px 5px 2.5px;
-  background-color: gray;
-}
-
 .list-item {
   padding-block: 3px;
   color: white;
@@ -185,51 +165,48 @@ hr {
 
 .nav-link-container {
   display: flex;
-  flex-direction: row; /* Stack link items vertically */
-  gap: 0.5rem; /* Add a little space between each link item */
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
-/* Style for the link item container */
 .navbar-link-item-container {
-  position: relative; /* Anchor for the absolute positioning of hover-div */
+  position: relative;
 }
 
-/* Style for the dropdown on hover */
 .hover-div {
-  display: none; /* Hide the dropdown initially */
-  position: absolute; /* Position it absolutely relative to its parent */
-  top: 100%; /* Directly below the link item */
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
   background-color: lightgray;
-  border-radius: 0 0 5px 5px; /* Rounded corners on the bottom */
-  z-index: 100; /* Ensure it stacks on top of other content */
-  white-space: nowrap; /* Prevents wrapping of list items */
+  z-index: 100;
+  white-space: nowrap;
+  max-width: 100px;
+  max-height: 150px;
+  border-radius: 0 5px 5px 5px;
+  border: 2px solid white;
+  z-index: 10;
+  background-color: gray;
 }
 
-/* Show the dropdown on hover of the link item container */
 .navbar-link-item-container:hover .hover-div {
-  display: block; /* Show the dropdown */
-  margin-top: 10px;
-
-  border: 2px solid #f15025;
+  display: block;
+  border: 2px solid #fff;
 }
 
-/* Style for individual list items in the dropdown */
 .list-item {
   color: #fff;
   font-size: 10.5px;
-  padding: 5px 10px; /* Add padding for clickable area */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
-/* Change background of list item on hover */
 .list-item:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 550px) {
   .nav-link-container {
-    position: absolute;
     padding: 10px;
     display: none;
     flex-direction: column;
@@ -254,46 +231,27 @@ hr {
     margin-top: -20px;
     background-color: #fff;
     border-radius: 7.5px;
-    width: 30vw;
+    width: 33vw;
     gap: 23px;
-    height: 170px;
+    height: 21vh;
     z-index: 10;
-    border: 5px solid orange;
+    border: 5px solid rgb(255, 255, 255);
     background-image: url('../assets/bg-s/link\ items\ bg.png'),
       linear-gradient(to right, black, gray);
     background-blend-mode: difference;
     right: 1rem;
     top: 5rem;
   }
+
   .navbar-link-item:hover {
-    background-color: transparent;
     scale: 1.1;
-
-    border-radius: 5px 5px 5px 0;
-  }
-
-  /* Define the keyframes for the moving background */
-  @keyframes moveBackground {
-    0% {
-      background-position: 0% 0%;
-    }
-    25% {
-      background-position: 25%;
-    }
-    50% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
+    border: transparent;
   }
 
   .nav-link-container {
     background-image: url('../assets/bg-s/link\ items\ bg.png');
     background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
     background-repeat: repeat-y;
-
-    animation: moveBackground 10s linear infinite;
   }
 }
 

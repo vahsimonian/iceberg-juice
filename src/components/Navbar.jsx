@@ -1,5 +1,5 @@
 import whiteArrowDown from '../assets/icons/white-down-arrow.png';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './navbar.css';
 import { Link } from 'react-scroll';
 import searchIcon from '../assets/icons/search-2-line.png';
@@ -23,6 +23,19 @@ function Navbar() {
     setMenuOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.body.addEventListener('click', closeMenu);
+    return () => {
+      document.body.removeEventListener('click', closeMenu);
+    };
+  }, []);
+
   const handleInputFocus = () => {
     setIsFocused(true);
   };
@@ -32,7 +45,7 @@ function Navbar() {
   };
 
   return (
-    <nav id="navbar">
+    <nav id="navbar" onClick={(e) => e.stopPropagation()}>
       <div className="bag-container">
         {hasFavorites() ? (
           <BsBagHeartFill className="icon-heart" />
