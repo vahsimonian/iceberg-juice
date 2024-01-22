@@ -237,7 +237,6 @@ hr {
     flex-direction: column;
     position: absolute;
     margin-top: -20px;
-    /* background-color: #fff; */
     border-radius: 7.5px 0 7.5px 7.5px;
     width: 30vw;
     gap: 23px;
