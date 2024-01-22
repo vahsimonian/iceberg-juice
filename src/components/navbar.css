@@ -8,7 +8,7 @@
   gap: 35px;
   position: fixed;
   background-image: url('../assets/bg-s/bg.jpg'),
-    linear-gradient(to right, #2558f1, rgb(100, 0, 128));
+    linear-gradient(to right, #f15025, green);
   background-blend-mode: lighten;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +105,6 @@ a {
   display: block;
   padding: 0;
   margin: 0;
-  top: 15px;
 }
 
 .home-link:hover .hover-div {
@@ -173,7 +172,7 @@ hr {
 }
 
 .hamburger-menu {
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 
@@ -186,34 +185,46 @@ hr {
 
 .nav-link-container {
   display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  flex-direction: row; /* Stack link items vertically */
+  gap: 0.5rem; /* Add a little space between each link item */
 }
 
+/* Style for the link item container */
 .navbar-link-item-container {
-  position: relative;
+  position: relative; /* Anchor for the absolute positioning of hover-div */
 }
 
+/* Style for the dropdown on hover */
 .hover-div {
-  display: none;
-  position: absolute;
-  top: 100%;
+  display: none; /* Hide the dropdown initially */
+  position: absolute; /* Position it absolutely relative to its parent */
+  top: 100%; /* Directly below the link item */
   left: 0;
   background-color: lightgray;
-  border-radius: 0 0 5px 5px;
-  z-index: 100;
-  white-space: nowrap;
+  border-radius: 0 0 5px 5px; /* Rounded corners on the bottom */
+  z-index: 100; /* Ensure it stacks on top of other content */
+  white-space: nowrap; /* Prevents wrapping of list items */
 }
 
+/* Show the dropdown on hover of the link item container */
 .navbar-link-item-container:hover .hover-div {
-  display: block;
+  display: block; /* Show the dropdown */
   margin-top: 10px;
+
   border: 2px solid #f15025;
 }
 
+/* Style for individual list items in the dropdown */
 .list-item {
+  color: #fff;
   font-size: 10.5px;
-  padding: 5px 10px;
+  padding: 5px 10px; /* Add padding for clickable area */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change background of list item on hover */
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
 }
 
 @media screen and (max-width: 550px) {
@@ -222,6 +233,10 @@ hr {
     padding: 10px;
     display: none;
     flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 
   .navbar-link-item {
@@ -237,22 +252,48 @@ hr {
     flex-direction: column;
     position: absolute;
     margin-top: -20px;
-    border-radius: 7.5px 0 7.5px 7.5px;
+    background-color: #fff;
+    border-radius: 7.5px;
     width: 30vw;
     gap: 23px;
     height: 170px;
     z-index: 10;
-    border: 1px solid orange;
+    border: 5px solid orange;
+    background-image: url('../assets/bg-s/link\ items\ bg.png'),
+      linear-gradient(to right, black, gray);
+    background-blend-mode: difference;
     right: 1rem;
     top: 5rem;
   }
   .navbar-link-item:hover {
     background-color: transparent;
     scale: 1.1;
+
+    border-radius: 5px 5px 5px 0;
+  }
+
+  /* Define the keyframes for the moving background */
+  @keyframes moveBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 25%;
+    }
+    50% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
   }
 
   .nav-link-container {
+    background-image: url('../assets/bg-s/link\ items\ bg.png');
     background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
+    background-repeat: repeat-y;
+
+    animation: moveBackground 10s linear infinite;
   }
 }
 
