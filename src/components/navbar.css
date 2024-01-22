@@ -173,7 +173,7 @@ hr {
 }
 
 .hamburger-menu {
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
@@ -186,46 +186,34 @@ hr {
 
 .nav-link-container {
   display: flex;
-  flex-direction: row; /* Stack link items vertically */
-  gap: 0.5rem; /* Add a little space between each link item */
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
-/* Style for the link item container */
 .navbar-link-item-container {
-  position: relative; /* Anchor for the absolute positioning of hover-div */
+  position: relative;
 }
 
-/* Style for the dropdown on hover */
 .hover-div {
-  display: none; /* Hide the dropdown initially */
-  position: absolute; /* Position it absolutely relative to its parent */
-  top: 100%; /* Directly below the link item */
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
   background-color: lightgray;
-  border-radius: 0 0 5px 5px; /* Rounded corners on the bottom */
-  z-index: 100; /* Ensure it stacks on top of other content */
-  white-space: nowrap; /* Prevents wrapping of list items */
+  border-radius: 0 0 5px 5px;
+  z-index: 100;
+  white-space: nowrap;
 }
 
-/* Show the dropdown on hover of the link item container */
 .navbar-link-item-container:hover .hover-div {
-  display: block; /* Show the dropdown */
+  display: block;
   margin-top: 10px;
-
   border: 2px solid #f15025;
 }
 
-/* Style for individual list items in the dropdown */
 .list-item {
-  color: #fff;
   font-size: 10.5px;
-  padding: 5px 10px; /* Add padding for clickable area */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Change background of list item on hover */
-.list-item:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
+  padding: 5px 10px;
 }
 
 @media screen and (max-width: 550px) {
@@ -234,10 +222,6 @@ hr {
     padding: 10px;
     display: none;
     flex-direction: column;
-  }
-
-  .hamburger-menu {
-    display: block;
   }
 
   .navbar-link-item {
@@ -253,27 +237,22 @@ hr {
     flex-direction: column;
     position: absolute;
     margin-top: -20px;
-    background-color: #fff;
-    border-radius: 7.5px;
+    /* background-color: #fff; */
+    border-radius: 7.5px 0 7.5px 7.5px;
     width: 30vw;
     gap: 23px;
     height: 170px;
     z-index: 10;
-    border: 5px solid orange;
-    background-image: url('../assets/bg-s/link\ items\ bg.png'),
-      linear-gradient(to right, black, gray);
-    background-blend-mode: difference;
+    border: 1px solid orange;
     right: 1rem;
     top: 5rem;
   }
   .navbar-link-item:hover {
     background-color: transparent;
     scale: 1.1;
-    border-radius: 5px 5px 5px 0;
   }
 
   .nav-link-container {
-    background-image: url('../assets/bg-s/link\ items\ bg.png');
     background: linear-gradient(to right, #c125f1, rgb(44, 127, 222));
   }
 }

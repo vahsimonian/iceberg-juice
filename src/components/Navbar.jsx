@@ -62,8 +62,7 @@ function Navbar() {
       </form>
       <div className={`hamburger-menu`} onClick={toggleMenu}>
         <div></div>
-        {/* <div></div> */}
-        {/* <div></div> */}
+        <div></div>
         <div></div>
       </div>
       <div className={`nav-link-container ${menuOpen ? 'show' : ''}`}>
