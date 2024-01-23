@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Juices from './components/Juices';
@@ -15,12 +15,13 @@ function App() {
       <JuiceProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/juices" element={<Juices />} />
-          {/* Uncomment or add more routes as needed */}
+          <Route index element={<Home />} />
+          <Route path="/" element={<Juices />} />
           {/* <Route path="/search" element={<Search />} /> */}
-          <Route path="/contact" element={<Contact />} />
-          {/* Add additional routes here */}
+          <Route path="/" element={<Contact />} />
+          {/* <Home /> */}
+          {/* <Juices /> */}
+          {/* <Contact /> */}
         </Routes>
         <Footer />
       </JuiceProvider>

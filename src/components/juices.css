@@ -10,9 +10,11 @@
     /* linear-gradient(to right, rgba(0, 255, 0, 0.466), rgb(73, 119, 73)); */
       linear-gradient(to right, #0b6d76, rgb(129, 8, 185));
   background-blend-mode: lighten;
+  box-sizing: border-box;
 }
 
 .juice-item-container {
+  margin-top: 10rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

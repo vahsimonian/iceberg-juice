@@ -16,7 +16,7 @@ function Home() {
       <div className="special-offers-container">
         <div className="special-offer">
           <h2 className="special-offer-h2">
-            <span> Refreshing</span> Summer Bonanza{' '}
+            <span> Refreshing</span> Summer Bonanza
           </h2>
           <p className="special-offer-p">
             As the mercury rises, cool off with our 'Summer Splash' collection –
@@ -79,7 +79,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <h1 className="competition-gallery-title">Competition Gallery</h1>
+        {/* <h1 className="competition-gallery-title">Competition Gallery</h1> */}
       </div>
       <div className="image-container">
         <img
