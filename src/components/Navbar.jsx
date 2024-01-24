@@ -1,7 +1,7 @@
 import whiteArrowDown from '../assets/icons/white-down-arrow.png';
 import React, { useContext, useState, useEffect } from 'react';
 import './navbar.css';
-import { Link } from 'react-scroll';
+import { Link as LinkIn } from 'react-scroll';
 import searchIcon from '../assets/icons/search-2-line.png';
 import juiceIcon from '../assets/icons/juice-icon.png';
 import { navbarItems } from '../juiceData';
@@ -12,6 +12,7 @@ import {
   BsBagPlus,
   BsBagPlusFill,
 } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { hasFavorites, hasCartItems } = useContext(JuiceContext);
@@ -92,7 +93,7 @@ function Navbar() {
             onMouseLeave={() => setHoveredItem(null)}
             key={item.id}
           >
-            <Link
+            <LinkIn
               className="navbar-link-item"
               activeClass="active"
               to={item.to}
@@ -115,7 +116,7 @@ function Navbar() {
                   }}
                 />
               )}
-            </Link>
+            </LinkIn>
             {hoveredItem === index && item.listItems && (
               <div className="hover-div">
                 {item.listItems.map((subItem, subIndex) => (
