@@ -8,6 +8,9 @@ import Contact from './Contact';
 import Footer from './Footer';
 import { JuiceProvider } from './JuiceContext';
 // import Search from "./components/Search";
+import Catalogue from './navbar links/Catalogue';
+import WeWorldwide from './navbar links/WeWorldwide';
+import Services from './navbar links/Services';
 
 function App() {
   return (
@@ -15,16 +18,19 @@ function App() {
       <JuiceProvider>
         <Navbar />
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="juices" element={<Juices />} />
-          <Route path="contact" element={<Contact />} />
-          {/* <Route path="/search" element={<Search />} /> */}
-          {/* <Home /> */}
-          {/* <Juices /> */}
-          {/* <Contact /> */}
+          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Contact />} />
+          <Route path="/products" element={<Juices />} />
+          <Route path="/catalogue" element={<Catalogue />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/we-worldwide" element={<WeWorldwide />} />
         </Routes>
         <Footer />
       </JuiceProvider>
+      {/* <Route path="/search" element={<Search />} /> */}
+      {/* <Home /> */}
+      {/* <Juices /> */}
+      {/* <Contact /> */}
     </Router>
   );
 }

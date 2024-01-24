@@ -117,15 +117,17 @@ function Navbar() {
                 />
               )}
             </LinkIn>
-            {hoveredItem === index && item.listItems && (
-              <div className="hover-div">
-                {item.listItems.map((subItem, subIndex) => (
-                  <div key={subIndex} className="list-item">
-                    {subItem} <hr />{' '}
-                  </div>
-                ))}
-              </div>
-            )}
+            <Link to={item.to}>
+              {hoveredItem === index && item.listItems && (
+                <div className="hover-div">
+                  {item.listItems.map((subItem, subIndex) => (
+                    <div key={subIndex} className="list-item">
+                      {subItem} <hr />{' '}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </Link>
           </div>
         ))}
       </div>
