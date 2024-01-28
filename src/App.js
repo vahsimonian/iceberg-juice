@@ -18,8 +18,8 @@ function App() {
       <JuiceProvider>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/home" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/home" element={<Contact />} /> */}
           <Route path="/products" element={<Juices />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/services" element={<Services />} />
